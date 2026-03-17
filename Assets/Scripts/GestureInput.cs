@@ -37,7 +37,7 @@ public class GestureInput : MonoBehaviour
             
             Debug.Log($"Spell: {result.name}, Score: {result.distance}");
 
-            CastSpell(result.Item1, currentStroke);
+            CastSpell(result.name, currentStroke);
         }
     }
 
