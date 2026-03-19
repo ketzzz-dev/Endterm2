@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class Thingy : MonoBehaviour
 {
 	public float playerSpeed = 10f;
 	public float jumpForce = 10f;

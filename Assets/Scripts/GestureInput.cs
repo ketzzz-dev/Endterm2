@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class GestureInput : MonoBehaviour
 {
-    [SerializeField] private LineRenderer worldStroke;
-    [SerializeField] private LineRenderer screenStroke;
+    [SerializeField] private LineRenderer lineRenderer;
     
     [SerializeField] private float minPointDistance = 5f;
     
@@ -14,10 +13,8 @@ public class GestureInput : MonoBehaviour
 
     private void Start()
     {
-        worldStroke.positionCount = 0;
-        screenStroke.positionCount = 0;
-        worldStroke.useWorldSpace = true;
-        screenStroke.useWorldSpace = false;
+        lineRenderer.positionCount = 0;
+        lineRenderer.useWorldSpace = true;
         
         // load templates here
         recognizer.AddTemplate("Fire", new() { // Fire = Triangle
@@ -39,13 +36,13 @@ public class GestureInput : MonoBehaviour
         });
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if (Input.GetMouseButtonDown(0))
         {
             currentStroke.Clear();
             
-            screenStroke.positionCount = 0;
+            lineRenderer.positionCount = 0;
         }
         if (Input.GetMouseButton(0))
         {
@@ -54,30 +51,23 @@ public class GestureInput : MonoBehaviour
             if (currentStroke.Count == 0 || Vector2.Distance(currentStroke.Last(), mousePosition) > minPointDistance)
             {
                 currentStroke.Add(mousePosition);
+
+                var worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
                 
-                screenStroke.positionCount = currentStroke.Count;
+                worldPosition.z = 0;
+                lineRenderer.positionCount = currentStroke.Count;
                 
-                screenStroke.SetPosition(currentStroke.Count - 1, currentStroke.Last());
+                lineRenderer.SetPosition(currentStroke.Count - 1, worldPosition);
             }
         }
 
         if (Input.GetMouseButtonUp(0))
         {
-            screenStroke.positionCount = 0;
-            
-            if (currentStroke.Count < 2)
-                return;
-
-            var worldPoints = GetWorldPoints(currentStroke);
-            
-            worldStroke.positionCount = worldPoints.Length;
-            worldStroke.SetPositions(worldPoints);
-            
             var result = recognizer.Recognize(currentStroke);
 
             if (result.name == null) return;
             
-            var worldCenter = GetWorldStrokeCenter(worldPoints);
+            var worldCenter = GetWorldStrokeCenter(currentStroke);
                 
             CastSpell(result.name, worldCenter);
         }
@@ -90,16 +80,7 @@ public class GestureInput : MonoBehaviour
         // TODO: make a spell class and use a dictionary for easy lookup
     }
 
-    private Vector3[] GetWorldPoints(List<Vector2> points)
-    {
-        var worldPoints = currentStroke
-            .Select(p => Camera.main.ScreenToWorldPoint(new Vector3(p.x, p.y, Camera.main.nearClipPlane + 1f)))
-            .Select(v => new Vector3(v.x, v.y, 0));
-        
-        return worldPoints.ToArray();
-    }
-
-    private Vector2 GetWorldStrokeCenter(Vector3[] points)
+    private Vector2 GetWorldStrokeCenter(List<Vector2> points)
     {
         var minX = points.Min(p => p.x);
         var maxX = points.Max(p => p.x);
