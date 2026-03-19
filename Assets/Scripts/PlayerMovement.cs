@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -17,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         var moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        var targetVelocity = moveInput * speed;
+        var targetVelocity = moveInput.normalized * speed;
         
         var isMoving = moveInput.sqrMagnitude > 0f;
         

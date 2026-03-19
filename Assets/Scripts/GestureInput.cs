@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -10,39 +11,47 @@ public class GestureInput : MonoBehaviour
     
     private List<Vector2> currentStroke = new();
     private GestureRecogniser recognizer = new();
+    
+    private bool isDrawing;
+    
+    private Camera mainCamera;
 
     private void Start()
     {
         lineRenderer.positionCount = 0;
         lineRenderer.useWorldSpace = true;
+        lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
+        
+        mainCamera = Camera.main;
         
         // load templates here
-        recognizer.AddTemplate("Fire", new() { // Fire = Triangle
-            new Vector2(-1, -1),
-            new Vector2(0, 1),
-            new Vector2(1, -1)
+        recognizer.AddTemplate("Fire", new List<Vector2> { // Fire = Triangle
+            new(-1, -1),
+            new(0, 1),
+            new(1, -1)
         });
-        recognizer.AddTemplate("Lightning", new() { // Lightning = Zig-Zag
-            new Vector2(-1, 1),
-            new Vector2(1, 1),
-            new Vector2(-1, -1),
-            new Vector2(1, -1)
+        recognizer.AddTemplate("Lightning", new List<Vector2> { // Lightning = Zig-Zag
+            new(-1, 1),
+            new(1, 1),
+            new(-1, -1),
+            new(1, -1)
         });
-        recognizer.AddTemplate("Heal", new() { // Heal = X with a line on top
-            new Vector2(-1, -1),
-            new Vector2(1, 1),
-            new Vector2(-1, 1),
-            new Vector2(1, -1)
+        recognizer.AddTemplate("Heal", new List<Vector2> { // Heal = X with a line on top
+            new(-1, -1),
+            new(1, 1),
+            new(-1, 1),
+            new(1, -1)
         });
     }
 
-    private void LateUpdate()
+    private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
             currentStroke.Clear();
             
             lineRenderer.positionCount = 0;
+            isDrawing = true;
         }
         if (Input.GetMouseButton(0))
         {
@@ -51,18 +60,26 @@ public class GestureInput : MonoBehaviour
             if (currentStroke.Count == 0 || Vector2.Distance(currentStroke.Last(), mousePosition) > minPointDistance)
             {
                 currentStroke.Add(mousePosition);
-
-                var worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
                 
-                worldPosition.z = 0;
                 lineRenderer.positionCount = currentStroke.Count;
-                
-                lineRenderer.SetPosition(currentStroke.Count - 1, worldPosition);
             }
         }
 
         if (Input.GetMouseButtonUp(0))
         {
+            isDrawing = false;
+            
+            for (var i = 0; i < Mathf.Min(currentStroke.Count, lineRenderer.positionCount); i++)
+            {
+                var point = currentStroke[i];
+                var depth = Mathf.Abs(mainCamera.transform.position.z);
+                var worldPoint = mainCamera.ScreenToWorldPoint(new Vector3(point.x, point.y, depth));
+
+                worldPoint.z = 0;
+                    
+                lineRenderer.SetPosition(i, worldPoint);
+            }
+            
             var result = recognizer.Recognize(currentStroke);
 
             if (result.name == null) return;
@@ -73,9 +90,25 @@ public class GestureInput : MonoBehaviour
         }
     }
 
-    private void CastSpell(string spellName, Vector2 center)
+    private void LateUpdate()
     {
-        Debug.Log("Casting " + spellName);
+        if (!isDrawing) return;
+        
+        for (var i = 0; i < Mathf.Min(currentStroke.Count, lineRenderer.positionCount); i++)
+        {
+            var point = currentStroke[i];
+            var depth = Mathf.Abs(mainCamera.transform.position.z);
+            var worldPoint = mainCamera.ScreenToWorldPoint(new Vector3(point.x, point.y, depth));
+
+            worldPoint.z = 0;
+                    
+            lineRenderer.SetPosition(i, worldPoint);
+        }
+    }
+
+    private void CastSpell(string spellName, Vector3 center)
+    {
+        Debug.Log($"Casting {spellName} at {center}");
         
         // TODO: make a spell class and use a dictionary for easy lookup
     }
@@ -89,7 +122,9 @@ public class GestureInput : MonoBehaviour
         
         var centerX = (minX + maxX) * 0.5f;
         var centerY = (minY + maxY) * 0.5f;
+        
+        var depth = Mathf.Abs(mainCamera.transform.position.z);
 
-        return new Vector2(centerX, centerY);
+        return mainCamera.ScreenToWorldPoint(new Vector3(centerX, centerY, depth));
     }
 }
