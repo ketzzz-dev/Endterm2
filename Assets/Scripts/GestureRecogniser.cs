@@ -13,11 +13,11 @@ public class Gesture
         this.points = points;
     }
 }
-
+    
 public class GestureRecogniser
 {
-    private const int NumPoints = 64;
-    private const float SquareSize = 250f;
+    public const int NumPoints = 64;
+    public const float SquareSize = 250f;
 
     private List<Gesture> templates = new();
 
@@ -28,23 +28,39 @@ public class GestureRecogniser
 
     public (string name, float distance) Recognize(List<Vector2> points)
     {
+        if (points == null || points.Count < 2 || templates.Count == 0)
+            return (null, float.MaxValue);
+
         var candidate = Normalize(points);
 
-        float bestDistance = float.MaxValue;
+        var bestDistance = float.MaxValue;
+        var secondBestDistance = float.MaxValue;
+        
         string bestMatch = null;
 
         foreach (var template in templates)
         {
-            float dist = PathDistance(candidate, template.points);
+            var dist = MinPathDistance(candidate, template.points);
             
             if (dist < bestDistance)
             {
+                secondBestDistance = bestDistance;
                 bestDistance = dist;
                 bestMatch = template.name;
             }
+            else if (dist < secondBestDistance)
+            {
+                secondBestDistance = dist;
+            }
         }
-
-        return (bestMatch, bestDistance);
+        
+        var ratio = bestDistance / secondBestDistance;
+        var normalized = bestDistance / PathLength(candidate);
+        var score = bestDistance / SquareSize;
+        
+        var reject = ratio > 0.9f || normalized > 0.25f || score > 0.15f;
+        
+        return reject ? (null, float.MaxValue) : (bestMatch, bestDistance);
     }
 
     private List<Vector2> Normalize(List<Vector2> points)
@@ -56,25 +72,26 @@ public class GestureRecogniser
         return translated;
     }
 
-    private List<Vector2> Resample(List<Vector2> points, int n)
+    private List<Vector2> Resample(List<Vector2> points, int numPoints)
     {
         var pathLength = PathLength(points);
-        var interval = pathLength / (n - 1);
+        var interval = pathLength / (numPoints - 1);
 
         var distanceTraveled = 0f;
-        var newPoints = new List<Vector2> { points[0] };
+        var oldPoints = new List<Vector2>(points);
+        var newPoints = new List<Vector2> { oldPoints[0] };
 
-        for (var i = 1; i < points.Count; i++)
+        for (var i = 1; i < oldPoints.Count; i++)
         {
-            var distance = Vector2.Distance(points[i - 1], points[i]);
+            var distance = Vector2.Distance(oldPoints[i - 1], oldPoints[i]);
             
             if ((distanceTraveled + distance) >= interval)
             {
                 var t = (interval - distanceTraveled) / distance;
-                var newPoint = Vector2.Lerp(points[i - 1], points[i], t);
+                var newPoint = Vector2.Lerp(oldPoints[i - 1], oldPoints[i], t);
                 
                 newPoints.Add(newPoint);
-                points.Insert(i, newPoint);
+                oldPoints.Insert(i, newPoint);
                 
                 distanceTraveled = 0f;
             }
@@ -84,8 +101,8 @@ public class GestureRecogniser
             }
         }
 
-        while (newPoints.Count < n)
-            newPoints.Add(points.Last());
+        while (newPoints.Count < numPoints)
+            newPoints.Add(oldPoints.Last());
 
         return newPoints;
     }
@@ -98,6 +115,9 @@ public class GestureRecogniser
         var maxY = points.Max(p => p.y);
 
         var scale = Mathf.Max(maxX - minX, maxY - minY);
+        
+        if (scale < Mathf.Epsilon)
+            return points;
 
         return points.Select(p => new Vector2(
             (p.x - minX) / scale * size,
@@ -115,6 +135,14 @@ public class GestureRecogniser
         return points.Select(p => p - centroid).ToList();
     }
 
+    private float MinPathDistance(List<Vector2> a, List<Vector2> b)
+    {
+        var forward = PathDistance(a, b);
+        var reversed = PathDistance(a, b.AsEnumerable().Reverse().ToList());
+        
+        return Mathf.Min(forward, reversed);
+    }
+    
     private float PathDistance(List<Vector2> a, List<Vector2> b)
     {
         var sum = a.Select((t, i) => Vector2.Distance(t, b[i])).Sum();
