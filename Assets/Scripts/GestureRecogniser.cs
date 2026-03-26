@@ -54,6 +54,7 @@ public class GestureRecogniser
             }
         }
         
+        // idk, completely arbitrary
         var ratio = bestDistance / secondBestDistance;
         var normalized = bestDistance / PathLength(candidate);
         var score = bestDistance / SquareSize;
