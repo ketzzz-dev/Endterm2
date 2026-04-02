@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -12,19 +11,16 @@ public class GestureInput : MonoBehaviour
     private List<Vector2> currentStroke = new();
     private GestureRecogniser recognizer = new();
     
-    private bool isDrawing;
-    
     private Camera mainCamera;
 
     private void Start()
     {
         lineRenderer.positionCount = 0;
         lineRenderer.useWorldSpace = true;
-        lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
         
         mainCamera = Camera.main;
         
-        // load templates here
+        // temporary test templates
         recognizer.AddTemplate("Fire", new List<Vector2> { // Fire = Triangle
             new(-1, -1),
             new(0, 1),
@@ -51,7 +47,6 @@ public class GestureInput : MonoBehaviour
             currentStroke.Clear();
             
             lineRenderer.positionCount = 0;
-            isDrawing = true;
         }
         if (Input.GetMouseButton(0))
         {
@@ -64,53 +59,32 @@ public class GestureInput : MonoBehaviour
                 lineRenderer.positionCount = currentStroke.Count;
             }
         }
-
         if (Input.GetMouseButtonUp(0))
         {
-            isDrawing = false;
-            
-            for (var i = 0; i < Mathf.Min(currentStroke.Count, lineRenderer.positionCount); i++)
-            {
-                var point = currentStroke[i];
-                var depth = Mathf.Abs(mainCamera.transform.position.z);
-                var worldPoint = mainCamera.ScreenToWorldPoint(new Vector3(point.x, point.y, depth));
-
-                worldPoint.z = 0;
-                    
-                lineRenderer.SetPosition(i, worldPoint);
-            }
-            
             var result = recognizer.Recognize(currentStroke);
 
             if (result == null) return;
             
             var worldCenter = GetWorldStrokeCenter(currentStroke);
-                
-            CastSpell(result, worldCenter);
+            
+            // TODO: Make a SpellCaster class
+            Debug.Log($"Casting {result} at {worldCenter}");
         }
     }
 
     private void LateUpdate()
     {
-        if (!isDrawing) return;
+        if (!Input.GetMouseButton(0)) return;
         
         for (var i = 0; i < Mathf.Min(currentStroke.Count, lineRenderer.positionCount); i++)
         {
             var point = currentStroke[i];
-            var depth = Mathf.Abs(mainCamera.transform.position.z);
-            var worldPoint = mainCamera.ScreenToWorldPoint(new Vector3(point.x, point.y, depth));
+            var worldPoint = mainCamera.ScreenToWorldPoint(new Vector3(point.x, point.y, 0));
 
             worldPoint.z = 0;
                     
             lineRenderer.SetPosition(i, worldPoint);
         }
-    }
-
-    private void CastSpell(string spellName, Vector3 center)
-    {
-        Debug.Log($"Casting {spellName} at {center}");
-        
-        // TODO: make a spell class and use a dictionary for easy lookup
     }
 
     private Vector2 GetWorldStrokeCenter(List<Vector2> points)

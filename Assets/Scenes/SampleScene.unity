@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 1007075423}
-  minPointDistance: 5
+  minPointDistance: 1
 --- !u!4 &266474007
 Transform:
   m_ObjectHideFlags: 0
