@@ -82,11 +82,11 @@ public class GestureInput : MonoBehaviour
             
             var result = recognizer.Recognize(currentStroke);
 
-            if (result.name == null) return;
+            if (result == null) return;
             
             var worldCenter = GetWorldStrokeCenter(currentStroke);
                 
-            CastSpell(result.name, worldCenter);
+            CastSpell(result, worldCenter);
         }
     }
 

@@ -26,15 +26,14 @@ public class GestureRecogniser
         templates.Add(new Gesture(name, Normalize(points)));
     }
 
-    public (string name, float distance) Recognize(List<Vector2> points)
+    public string Recognize(List<Vector2> points)
     {
         if (points == null || points.Count < 2 || templates.Count == 0)
-            return (null, float.MaxValue);
+            return null;
 
         var candidate = Normalize(points);
 
         var bestDistance = float.MaxValue;
-        var secondBestDistance = float.MaxValue;
         
         string bestMatch = null;
 
@@ -44,24 +43,12 @@ public class GestureRecogniser
             
             if (dist < bestDistance)
             {
-                secondBestDistance = bestDistance;
                 bestDistance = dist;
                 bestMatch = template.name;
             }
-            else if (dist < secondBestDistance)
-            {
-                secondBestDistance = dist;
-            }
         }
-        
-        // idk, completely arbitrary
-        var ratio = bestDistance / secondBestDistance;
-        var normalized = bestDistance / PathLength(candidate);
-        var score = bestDistance / SquareSize;
-        
-        var reject = ratio > 0.9f || normalized > 0.25f || score > 0.15f;
-        
-        return reject ? (null, float.MaxValue) : (bestMatch, bestDistance);
+
+        return bestMatch;
     }
 
     private List<Vector2> Normalize(List<Vector2> points)
