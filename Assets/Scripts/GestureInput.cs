@@ -24,7 +24,8 @@ public class GestureInput : MonoBehaviour
         recognizer.AddTemplate("Fire", new List<Vector2> { // Fire = Triangle
             new(-1, -1),
             new(0, 1),
-            new(1, -1)
+            new(1, -1),
+            new(-1, -1)
         });
         recognizer.AddTemplate("Lightning", new List<Vector2> { // Lightning = Zig-Zag
             new(-1, 1),
@@ -32,11 +33,12 @@ public class GestureInput : MonoBehaviour
             new(-1, -1),
             new(1, -1)
         });
-        recognizer.AddTemplate("Heal", new List<Vector2> { // Heal = X with a line on top
+        recognizer.AddTemplate("Heal", new List<Vector2> { // Heal = Hourglass
             new(-1, -1),
             new(1, 1),
             new(-1, 1),
-            new(1, -1)
+            new(1, -1),
+            new(-1, -1)
         });
     }
 
@@ -79,7 +81,7 @@ public class GestureInput : MonoBehaviour
         for (var i = 0; i < Mathf.Min(currentStroke.Count, lineRenderer.positionCount); i++)
         {
             var point = currentStroke[i];
-            var worldPoint = mainCamera.ScreenToWorldPoint(new Vector3(point.x, point.y, 0));
+            var worldPoint = mainCamera.ScreenToWorldPoint(new Vector3(point.x, point.y, -mainCamera.transform.position.z));
 
             worldPoint.z = 0;
                     
@@ -96,9 +98,11 @@ public class GestureInput : MonoBehaviour
         
         var centerX = (minX + maxX) * 0.5f;
         var centerY = (minY + maxY) * 0.5f;
-        
-        var depth = Mathf.Abs(mainCamera.transform.position.z);
 
-        return mainCamera.ScreenToWorldPoint(new Vector3(centerX, centerY, depth));
+        var worldCenter = mainCamera.ScreenToWorldPoint(new Vector3(centerX, centerY, -mainCamera.transform.position.z));
+        
+        worldCenter.z = 0;
+        
+        return worldCenter;
     }
 }

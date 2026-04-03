@@ -23,6 +23,6 @@ public class PlayerMovement : MonoBehaviour
         var accelerationRate = isMoving ? acceleration : deceleration;
         var accelerationFactor = 1f - Mathf.Exp(-accelerationRate * Time.fixedDeltaTime);
         
-        rigidbody.linearVelocity = Vector3.Lerp(rigidbody.linearVelocity, targetVelocity, accelerationFactor);
+        rigidbody.linearVelocity = Vector2.Lerp(rigidbody.linearVelocity, targetVelocity, accelerationFactor);
     }
 }
