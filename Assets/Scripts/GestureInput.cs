@@ -7,12 +7,13 @@ public class GestureInput : MonoBehaviour
     [SerializeField] private LineRenderer lineRenderer;
     
     [SerializeField] private float minPointDistance = 5f;
+    [SerializeField] [Range(0f, 1f)] private float minScore = 0.75f;
     
-    private List<Vector2> currentStroke = new();
-    private GestureRecogniser recognizer = new();
+    private readonly List<Vector2> currentStroke = new();
+    private readonly GestureRecogniser recognizer = new();
     
     private Camera mainCamera;
-
+    
     private void Start()
     {
         lineRenderer.positionCount = 0;
@@ -21,24 +22,23 @@ public class GestureInput : MonoBehaviour
         mainCamera = Camera.main;
         
         // temporary test templates
-        recognizer.AddTemplate("Fire", new List<Vector2> { // Fire = Triangle
+        // TODO: create a Spell ScriptableObject
+        recognizer.AddGesture("Fire", new List<Vector2> { // Fire = Triangle
             new(-1, -1),
             new(0, 1),
-            new(1, -1),
-            new(-1, -1)
+            new(1, -1)
         });
-        recognizer.AddTemplate("Lightning", new List<Vector2> { // Lightning = Zig-Zag
+        recognizer.AddGesture("Lightning", new List<Vector2> { // Lightning = Zig-Zag
             new(-1, 1),
             new(1, 1),
             new(-1, -1),
             new(1, -1)
         });
-        recognizer.AddTemplate("Heal", new List<Vector2> { // Heal = Hourglass
+        recognizer.AddGesture("Heal", new List<Vector2> { // Heal = Hourglass
             new(-1, -1),
             new(1, 1),
             new(-1, 1),
-            new(1, -1),
-            new(-1, -1)
+            new(1, -1)
         });
     }
 
@@ -54,7 +54,7 @@ public class GestureInput : MonoBehaviour
         {
             var mousePosition = (Vector2)Input.mousePosition;
             
-            if (currentStroke.Count == 0 || Vector2.Distance(currentStroke.Last(), mousePosition) > minPointDistance)
+            if (currentStroke.Count == 0 || Vector2.Distance(currentStroke[^1], mousePosition) > minPointDistance)
             {
                 currentStroke.Add(mousePosition);
                 
@@ -65,12 +65,12 @@ public class GestureInput : MonoBehaviour
         {
             var result = recognizer.Recognize(currentStroke);
 
-            if (result == null) return;
+            if (result.score < minScore) return;
             
             var worldCenter = GetWorldStrokeCenter(currentStroke);
             
             // TODO: Make a SpellCaster class
-            Debug.Log($"Casting {result} at {worldCenter}");
+            Debug.Log($"Casting {result.name} ({result.score}) at {worldCenter}");
         }
     }
 

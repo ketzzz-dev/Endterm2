@@ -1,34 +1,30 @@
 using System.Collections.Generic;
 using System.Linq;
+using Unity.Mathematics.Geometry;
 using UnityEngine;
 
 public class Gesture
 {
     public readonly string name;
-    public readonly List<List<Vector2>> templates;
+    public readonly List<float[]> templates = new();
 
-    public Gesture(string name)
-    {
-        this.name = name;
-        templates = new List<List<Vector2>>();
-    }
+    public Gesture(string name) => this.name = name;
 
-    public void AddTemplate(List<Vector2> points)
-    {
-        templates.Add(points);
-    }
+    public void AddTemplate(float[] vectors) => templates.Add(vectors);
 }
     
 public class GestureRecogniser
 {
     public const int NumPoints = 64;
     public const float SquareSize = 250f;
-    public const float MinScore = 0.75f;
 
     private readonly List<Gesture> gestures = new();
 
-    public void AddTemplate(string name, List<Vector2> points)
+    public void AddGesture(string name, List<Vector2> points)
     {
+        if (points == null || points.Count < 2)
+            return;
+        
         var gesture = gestures.Find(g => g.name == name);
 
         if (gesture == null)
@@ -38,15 +34,18 @@ public class GestureRecogniser
             gestures.Add(gesture);
         }
         
-        gesture.AddTemplate(Normalize(points));
+        var normalized = Normalize(points);
+        var vectorized = Vectorize(normalized);
+        
+        gesture.AddTemplate(vectorized);
     }
 
-    public string Recognize(List<Vector2> points)
+    public (string name, float score) Recognize(List<Vector2> points)
     {
         if (points == null || points.Count < 2 || gestures.Count == 0)
-            return null;
+            return (null, 0f);
 
-        var candidate = Normalize(points);
+        var candidate = Vectorize(Normalize(points));
         var bestDistance = float.MaxValue;
         string bestMatch = null;
 
@@ -54,7 +53,7 @@ public class GestureRecogniser
         {
             foreach (var template in gesture.templates)
             {
-                var dist = PathDistance(candidate, template);
+                var dist = OptimalCosineDistance(candidate, template);
 
                 if (dist > bestDistance)
                     continue;
@@ -64,19 +63,64 @@ public class GestureRecogniser
             }
         }
         
-        var score = 1f - bestDistance / (0.5f * Mathf.Sqrt(2) * SquareSize);
+        var score = 1f - (bestDistance / (0.5f * Mathf.PI));
         
-        return Mathf.Clamp01(score) < MinScore ? null : bestMatch;
+        return (bestMatch, Mathf.Clamp01(score));
     }
 
     private List<Vector2> Normalize(List<Vector2> points)
     {
         var resampled = Resample(points, NumPoints);
-        var rotated = RotateToZero(resampled);
-        var scaled = ScaleToSquare(rotated, SquareSize);
+        var scaled = ScaleToSquare(resampled, SquareSize);
         var translated = TranslateToOrigin(scaled);
         
         return translated;
+    }
+
+    private float[] Vectorize(List<Vector2> points)
+    {
+        var vector = new float[points.Count * 2];
+        var sum = 0f;
+
+        for (var i = 0; i < points.Count; i++)
+        {
+            vector[i * 2] = points[i].x;
+            vector[i * 2 + 1] = points[i].y;
+            
+            sum += points[i].sqrMagnitude;
+        }
+        
+        var magnitude = Mathf.Sqrt(sum);
+
+        if (magnitude > Mathf.Epsilon)
+        {
+            magnitude = 1f / magnitude;
+            
+            for (var i = 0; i < vector.Length; i++)
+                vector[i] *= magnitude;
+        }
+        
+        return vector;
+    }
+    
+    private float OptimalCosineDistance(float[] a, float[] b)
+    {
+        if (a.Length != b.Length)
+            return float.MaxValue;
+
+        var sum = 0f;
+        var cross = 0f;
+
+        for (var i = 0; i < a.Length; i += 2)
+        {
+            sum += a[i] * b[i] + a[i + 1] * b[i + 1];
+            cross += a[i] * b[i + 1] - a[i + 1] * b[i];
+        }
+
+        var magnitude = Mathf.Sqrt(sum * sum + cross * cross);
+        magnitude = Mathf.Clamp01(magnitude);
+
+        return Mathf.Acos(magnitude);
     }
 
     private List<Vector2> Resample(List<Vector2> points, int numPoints)
@@ -119,34 +163,10 @@ public class GestureRecogniser
         while (newPoints.Count < numPoints)
             newPoints.Add(oldPoints[^1]);
 
+        if (newPoints.Count > numPoints)
+            newPoints = newPoints.Take(numPoints).ToList();
+
         return newPoints;
-    }
-
-    private List<Vector2> RotateToZero(List<Vector2> points)
-    {
-        var centroid = new Vector2(
-            points.Average(p => p.x),
-            points.Average(p => p.y)
-        ); 
-        
-        var theta = Mathf.Atan2(points[0].y - centroid.y, points[0].x - centroid.x);
-        var cos = Mathf.Cos(-theta);
-        var sin = Mathf.Sin(-theta);
-        
-        var rotated = new List<Vector2>(points.Count);
-
-        foreach (var point in points)
-        {
-            var dx = point.x - centroid.x;
-            var dy = point.y - centroid.y;
-
-            rotated.Add(new Vector2(
-                dx * cos - dy * sin,
-                dx * sin + dy * cos
-            )); 
-        }
-        
-        return rotated;
     }
 
     private List<Vector2> ScaleToSquare(List<Vector2> points, float size)
@@ -155,20 +175,16 @@ public class GestureRecogniser
         var maxX = points.Max(p => p.x);
         var minY = points.Min(p => p.y);
         var maxY = points.Max(p => p.y);
-
-        var scale = Mathf.Max(maxX - minX, maxY - minY);
         
-        if (scale < Mathf.Epsilon)
-            return points;
-        
-        var squareScale = 1f / scale * size;
+        var width = size / (maxX - minX);
+        var height = size / (maxY - minY);
         var scaled = new List<Vector2>(points.Count);
 
         foreach (var point in points)
         {
             scaled.Add(new Vector2(
-                (point.x - minX) * squareScale,
-                (point.y - minY) * squareScale
+                (point.x - minX) * width,
+                (point.y - minY) * height
             ));
         }
         
@@ -192,13 +208,6 @@ public class GestureRecogniser
         return translated;
     }
     
-    private float PathDistance(List<Vector2> a, List<Vector2> b)
-    {
-        var sum = a.Select((t, i) => Vector2.Distance(t, b[i])).Sum();
-
-        return sum / a.Count;
-    }
-
     private float PathLength(List<Vector2> points)
     {
         var length = 0f;
