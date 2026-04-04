@@ -1,6 +1,6 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.Mathematics.Geometry;
 using UnityEngine;
 
 public class Gesture
@@ -9,20 +9,18 @@ public class Gesture
     public readonly List<float[]> templates = new();
 
     public Gesture(string name) => this.name = name;
-
-    public void AddTemplate(float[] vectors) => templates.Add(vectors);
 }
     
-public class GestureRecogniser
+public class GestureRecognizer
 {
     public const int NumPoints = 64;
     public const float SquareSize = 250f;
 
     private readonly List<Gesture> gestures = new();
 
-    public void AddGesture(string name, List<Vector2> points)
+    public void AddGesture(string name, List<List<Vector2>> strokes)
     {
-        if (points == null || points.Count < 2)
+        if (strokes == null || strokes.Count == 0)
             return;
         
         var gesture = gestures.Find(g => g.name == name);
@@ -33,19 +31,25 @@ public class GestureRecogniser
             
             gestures.Add(gesture);
         }
-        
-        var normalized = Normalize(points);
-        var vectorized = Vectorize(normalized);
-        
-        gesture.AddTemplate(vectorized);
+
+        var unistrokes = GenerateUnistrokes(strokes);
+
+        foreach (var unistroke in unistrokes)
+        {
+            var template = Vectorize(Normalize(unistroke));
+            
+            gesture.templates.Add(template);
+        }
     }
 
-    public (string name, float score) Recognize(List<Vector2> points)
+    public (string name, float score) Recognize(List<List<Vector2>> strokes)
     {
-        if (points == null || points.Count < 2 || gestures.Count == 0)
+        if (strokes == null || strokes.Count == 0 || gestures.Count == 0)
             return (null, 0f);
 
-        var candidate = Vectorize(Normalize(points));
+        var combined = CombineStrokes(strokes);
+        var candidate = Vectorize(Normalize(combined));
+        
         var bestDistance = float.MaxValue;
         string bestMatch = null;
 
@@ -55,11 +59,11 @@ public class GestureRecogniser
             {
                 var dist = OptimalCosineDistance(candidate, template);
 
-                if (dist > bestDistance)
-                    continue;
-            
-                bestDistance = dist;
-                bestMatch = gesture.name;
+                if (dist < bestDistance)
+                {
+                    bestDistance = dist;
+                    bestMatch = gesture.name;
+                }
             }
         }
         
@@ -68,6 +72,79 @@ public class GestureRecogniser
         return (bestMatch, Mathf.Clamp01(score));
     }
 
+    private List<List<Vector2>> GenerateUnistrokes(List<List<Vector2>> strokes)
+    {
+        var results = new List<List<Vector2>>();
+        var orders = Permute(strokes);
+
+        foreach (var order in orders)
+        {
+            var n = order.Count;
+            var combinations = 1 << n;
+
+            for (var mask = 0; mask < combinations; mask++)
+            {
+                var uni = new List<Vector2>();
+
+                for (var i = 0; i < n; i++)
+                {
+                    var stroke = order[i];
+                    
+                    // reverse
+                    if (((mask >> i) & 1) == 1)
+                        stroke = stroke.AsEnumerable().Reverse().ToList();
+
+                    uni.AddRange(stroke);
+                }
+
+                results.Add(uni);
+            }
+        }
+
+        return results;
+    }
+
+    private List<List<List<Vector2>>> Permute(List<List<Vector2>> strokes)
+    {
+        var n = strokes.Count;
+        var results = new List<List<List<Vector2>>>();
+
+        var indices = Enumerable.Range(0, n).ToArray();
+
+        while (true)
+        {
+            var permutation = new List<List<Vector2>>(n);
+            for (var i = 0; i < n; i++)
+                permutation.Add(strokes[indices[i]]);
+
+            results.Add(permutation);
+
+            // Generate next lexicographic permutation
+            var k = n - 2;
+            while (k >= 0 && indices[k] > indices[k + 1]) k--;
+
+            if (k < 0)
+                break;
+
+            var l = n - 1;
+            while (indices[k] > indices[l]) l--;
+
+            (indices[k], indices[l]) = (indices[l], indices[k]);
+
+            Array.Reverse(indices, k + 1, n - (k + 1));
+        }
+
+        return results;
+    }
+
+    private List<Vector2> CombineStrokes(List<List<Vector2>> strokes)
+    {
+        var result = new List<Vector2>();
+        foreach (var s in strokes)
+            result.AddRange(s);
+        return result;
+    }
+    
     private List<Vector2> Normalize(List<Vector2> points)
     {
         var resampled = Resample(points, NumPoints);
@@ -176,15 +253,19 @@ public class GestureRecogniser
         var minY = points.Min(p => p.y);
         var maxY = points.Max(p => p.y);
         
-        var width = size / (maxX - minX);
-        var height = size / (maxY - minY);
+        var rangeX = maxX - minX;
+        var rangeY = maxY - minY;
+        
+        var scaleX = rangeX > Mathf.Epsilon ? size / rangeX : size / rangeY;
+        var scaleY = rangeY > Mathf.Epsilon ? size / rangeY : size / rangeX;
+        
         var scaled = new List<Vector2>(points.Count);
 
         foreach (var point in points)
         {
             scaled.Add(new Vector2(
-                (point.x - minX) * width,
-                (point.y - minY) * height
+                (point.x - minX) * scaleX,
+                (point.y - minY) * scaleY
             ));
         }
         

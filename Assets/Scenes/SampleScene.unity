@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 1007075423}
   minPointDistance: 1
+  minScore: 0.75
 --- !u!4 &266474007
 Transform:
   m_ObjectHideFlags: 0
@@ -588,7 +589,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -599,7 +600,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &1616468386
 CircleCollider2D:
   m_ObjectHideFlags: 0
