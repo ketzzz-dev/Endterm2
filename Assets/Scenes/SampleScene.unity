@@ -366,7 +366,7 @@ GameObject:
   - component: {fileID: 689598708}
   - component: {fileID: 689598707}
   m_Layer: 0
-  m_Name: RuneInputCapture
+  m_Name: SymbolInputCapture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -385,7 +385,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RuneInputCapture
   strokeWindowDuration: 1
-  sampleInterval: 3
+  minPointDistance: 5
+  strokePrefab: {fileID: 8313083524474372762, guid: 12a8771dc7a7de346a21ffac6181e6ba, type: 3}
 --- !u!4 &689598708
 Transform:
   m_ObjectHideFlags: 0

@@ -6,9 +6,14 @@ using UnityEngine;
 public class Gesture
 {
     public readonly string name;
+    public readonly int strokeCount;
     public readonly List<float[]> templates = new();
 
-    public Gesture(string name) => this.name = name;
+    public Gesture(string name, int strokeCount)
+    {
+        this.name = name;
+        this.strokeCount = strokeCount;
+    }
 }
     
 public class GestureRecognizer
@@ -16,7 +21,16 @@ public class GestureRecognizer
     public const int NumPoints = 64;
     public const float SquareSize = 250f;
 
+    private readonly float minScoreThreshold;
+    private readonly float scoreMargin;
+
     private readonly List<Gesture> gestures = new();
+
+    public GestureRecognizer(float minScoreThreshold = 0.75f, float scoreMargin = 0.05f)
+    {
+        this.minScoreThreshold = minScoreThreshold;
+        this.scoreMargin = scoreMargin;
+    }
 
     public void AddGesture(string name, List<List<Vector2>> strokes)
     {
@@ -27,7 +41,7 @@ public class GestureRecognizer
 
         if (gesture == null)
         {
-            gesture = new Gesture(name);
+            gesture = new Gesture(name, strokes.Count);
             
             gestures.Add(gesture);
         }
@@ -42,34 +56,60 @@ public class GestureRecognizer
         }
     }
 
-    public (string name, float score) Recognize(List<List<Vector2>> strokes)
+    public string Recognize(List<List<Vector2>> strokes)
     {
         if (strokes == null || strokes.Count == 0 || gestures.Count == 0)
-            return (null, 0f);
+            return null;
 
         var combined = CombineStrokes(strokes);
         var candidate = Vectorize(Normalize(combined));
         
         var bestDistance = float.MaxValue;
+        var secondBestDistance = float.MaxValue;
         string bestMatch = null;
+        string secondBestMatch = null;
 
         foreach (var gesture in gestures)
         {
+            if (gesture.strokeCount != strokes.Count)
+                continue;
+
+            var bestTemplateDistance = float.MaxValue;
+            
             foreach (var template in gesture.templates)
             {
-                var dist = OptimalCosineDistance(candidate, template);
+                var distance = OptimalCosineDistance(candidate, template);
 
-                if (dist < bestDistance)
-                {
-                    bestDistance = dist;
-                    bestMatch = gesture.name;
-                }
+                if (distance < bestTemplateDistance)
+                    bestTemplateDistance = distance;
+            }
+
+            if (bestTemplateDistance < bestDistance)
+            {
+                secondBestDistance = bestDistance;
+                bestDistance = bestTemplateDistance;
+                secondBestMatch = bestMatch;
+                bestMatch = gesture.name;
+            }
+            else if (bestTemplateDistance < secondBestDistance)
+            {
+                secondBestDistance = bestTemplateDistance;
+                secondBestMatch = gesture.name;
             }
         }
+
+        if (bestMatch == null)
+            return null;
         
-        var score = 1f - (bestDistance / (0.5f * Mathf.PI));
+        var bestScore = 1f - (bestDistance / (0.5f * Mathf.PI));
+        var secondBestScore = 1f - (secondBestDistance / (0.5f * Mathf.PI));
+
+        Debug.Log($"Best match: {bestMatch} (score: {bestScore:F2}), Second best: {secondBestMatch} (score: {secondBestScore:F2})");
+
+        if (bestScore < minScoreThreshold || (bestScore - secondBestScore) < scoreMargin)
+            return null;
         
-        return (bestMatch, Mathf.Clamp01(score));
+        return bestMatch;
     }
 
     private List<List<Vector2>> GenerateUnistrokes(List<List<Vector2>> strokes)
@@ -140,8 +180,10 @@ public class GestureRecognizer
     private List<Vector2> CombineStrokes(List<List<Vector2>> strokes)
     {
         var result = new List<Vector2>();
+
         foreach (var s in strokes)
             result.AddRange(s);
+
         return result;
     }
     
@@ -213,28 +255,28 @@ public class GestureRecognizer
         var oldPoints = new List<Vector2>(points);
         var newPoints = new List<Vector2> { oldPoints[0] };
 
-        for (var i = 1; i < oldPoints.Count; i++)
+        for (var i = 1; i < points.Count; i++)
         {
-            var distance = Vector2.Distance(oldPoints[i - 1], oldPoints[i]);
-            
+            var prev = points[i - 1];
+            var curr = points[i];
+            var distance = Vector2.Distance(prev, curr);
+
             if (distance < Mathf.Epsilon)
                 continue;
 
-            if (accumulatedDistance + distance >= interval)
+            while (accumulatedDistance + distance >= interval)
             {
                 var t = (interval - accumulatedDistance) / distance;
-                var newPoint = Vector2.Lerp(oldPoints[i - 1], oldPoints[i], t);
+                var newPoint = Vector2.Lerp(prev, curr, t);
 
                 newPoints.Add(newPoint);
-                oldPoints.Insert(i, newPoint);
 
+                prev = newPoint;
+                distance = Vector2.Distance(prev, curr);
                 accumulatedDistance = 0f;
-                i--;
             }
-            else
-            {
-                accumulatedDistance += distance;
-            }
+
+            accumulatedDistance += distance;
         }
 
         while (newPoints.Count < numPoints)
