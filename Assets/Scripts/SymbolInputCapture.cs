@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class SymbolInputCapture : MonoBehaviour
 {
@@ -53,7 +54,7 @@ public class SymbolInputCapture : MonoBehaviour
         // Update current stroke renderer positions
         if (currentRenderer != null && currentStroke.Count > 0)
         {
-            for (int i = 0; i < currentStroke.Count; i++)
+            for (var i = 0; i < currentStroke.Count; i++)
             {
                 var world = ScreenToWorld(currentStroke[i]);
 
@@ -61,7 +62,7 @@ public class SymbolInputCapture : MonoBehaviour
             }
         }
         
-        for (int i = 0; i < strokes.Count; i++)
+        for (var i = 0; i < strokes.Count; i++)
         {
             var r = strokeRenderers[i];
 
@@ -70,7 +71,7 @@ public class SymbolInputCapture : MonoBehaviour
 
             var stroke = strokes[i];
 
-            for (int j = 0; j < stroke.Count; j++)
+            for (var j = 0; j < stroke.Count; j++)
             {
                 var world = ScreenToWorld(stroke[j]);
 
@@ -83,23 +84,30 @@ public class SymbolInputCapture : MonoBehaviour
 
     private void HandleIdle()
     {
-        if (!Input.GetMouseButtonDown(0))
+        var pointer = Pointer.current;
+        
+        if (pointer == null || !pointer.press.wasPressedThisFrame)
             return;
 
         ResetAll();
-        BeginStroke(Input.mousePosition);
+        BeginStroke(pointer.position.ReadValue());
 
         currentState = State.Drawing;
     }
 
     private void HandleDrawing()
     {
-        if (Input.GetMouseButton(0))
+        var pointer = Pointer.current;
+        
+        if (pointer == null)
+            return;
+        
+        if (pointer.press.isPressed)
         {
-            TryAddPoint(Input.mousePosition);
+            TryAddPoint(pointer.position.ReadValue());
         }
 
-        if (Input.GetMouseButtonUp(0))
+        if (pointer.press.wasReleasedThisFrame)
         {
             if (currentStroke.Count >= 2)
             {
@@ -126,16 +134,21 @@ public class SymbolInputCapture : MonoBehaviour
 
     private void HandleWaiting()
     {
-        if (Input.GetMouseButtonDown(1))
+        var pointer = Pointer.current;
+        
+        if (pointer == null)
+            return;
+        
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             TryCast();
 
             return;
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (pointer.press.wasPressedThisFrame)
         {
-            BeginStroke(Input.mousePosition);
+            BeginStroke(pointer.position.ReadValue());
 
             currentState = State.Drawing;
 
@@ -258,9 +271,10 @@ public class SymbolInputCapture : MonoBehaviour
         var circlePoints = new List<Vector2>();
         var step = 2f * Mathf.PI / 64;
 
-        for (int i = 0; i < 64; i++)
+        for (var i = 0; i < 64; i++)
         {
-            float angle = i * step;
+            var angle = i * step;
+            
             circlePoints.Add(new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * 50f);
         }
 
