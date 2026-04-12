@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class SymbolInputCapture : MonoBehaviour
+public class SymbolInput : MonoBehaviour
 {
     [Header("Timing")]
     [SerializeField] private float strokeWindowDuration = 1f;
@@ -12,6 +12,11 @@ public class SymbolInputCapture : MonoBehaviour
 
     [Header("Rendering")]
     [SerializeField] private LineRenderer strokePrefab;
+
+    [Header("Symbols")]
+    [SerializeField] private List<SymbolDefinition> symbolDefinitions;
+
+    public static event System.Action<string> OnSymbolRecognized;
 
     private const int MaxStrokes = 3;
 
@@ -27,7 +32,7 @@ public class SymbolInputCapture : MonoBehaviour
     private Camera cam;
     private float strokeWindowTimer;
 
-    private GestureRecognizer recognizer = new();
+    private readonly SymbolRecognizer recognizer = new();
 
     private void Awake()
     {
@@ -36,7 +41,7 @@ public class SymbolInputCapture : MonoBehaviour
 
     private void Start()
     {
-        RegisterTestGestures();
+        LoadSymbols();
     }
 
     private void Update()
@@ -159,7 +164,7 @@ public class SymbolInputCapture : MonoBehaviour
 
         if (strokeWindowTimer <= 0f)
         {
-            Debug.Log("Rune fizzled — stroke window expired.");
+            Debug.Log("Rune fizzled, stroke window expired.");
             ResetAll();
 
             currentState = State.Idle;
@@ -218,16 +223,10 @@ public class SymbolInputCapture : MonoBehaviour
 
     private void TryCast()
     {
-        var name = recognizer.Recognize(strokes);
+        var symbolId = recognizer.Recognize(strokes);
 
-        if (name != null)
-        {
-            Debug.Log($"Rune recognized: {name}");
-        }
-        else
-        {
-            Debug.Log("Rune not recognized");
-        }
+        if (!string.IsNullOrEmpty(symbolId))
+            OnSymbolRecognized?.Invoke(symbolId);
 
         ResetAll();
 
@@ -240,7 +239,8 @@ public class SymbolInputCapture : MonoBehaviour
 
     private Vector3 ScreenToWorld(Vector2 screenPos)
     {
-        var world = cam.ScreenToWorldPoint(screenPos);
+        var z = -cam.transform.position.z;
+        var world = cam.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y, z));
 
         world.z = 0f;
 
@@ -264,62 +264,36 @@ public class SymbolInputCapture : MonoBehaviour
 
     #endregion
 
-    #region Test Gestures
+    #region Symbols
 
-    private void RegisterTestGestures()
+    private void LoadSymbols()
     {
-        var circlePoints = new List<Vector2>();
-        var step = 2f * Mathf.PI / 64;
-
-        for (var i = 0; i < 64; i++)
+        if (symbolDefinitions == null || symbolDefinitions.Count == 0)
         {
-            var angle = i * step;
-            
-            circlePoints.Add(new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * 50f);
+            Debug.LogWarning("No symbol definitions assigned.");
+
+            return;
         }
 
-        recognizer.AddGesture("Circle", new List<List<Vector2>> { circlePoints });
-
-        recognizer.AddGesture("Triangle", new List<List<Vector2>>
+        foreach (var def in symbolDefinitions)
         {
-            new List<Vector2>
+            if (def == null || string.IsNullOrEmpty(def.symbolId))
             {
-                Vector2.zero,
-                Vector2.right * 100,
-                Vector2.right * 50 + Vector2.up * 86.6f,
-                Vector2.zero
-            }
-        });
+                Debug.LogWarning("Invalid symbol definition found, skipping.");
 
-        recognizer.AddGesture("Cross", new List<List<Vector2>>
-        {
-            new List<Vector2>
-            {
-                Vector2.zero,
-                Vector2.right * 100
-            },
-            new List<Vector2>
-            {
-                Vector2.right * 50 + Vector2.down * 50,
-                Vector2.right * 50 + Vector2.up * 50
+                continue;
             }
-        });
 
-        recognizer.AddGesture("Pitchfork", new List<List<Vector2>>
-        {
-            new List<Vector2>
+            foreach (var template in def.templates)
             {
-                Vector2.zero,
-                Vector2.up * 100
-            },
-            new List<Vector2>
-            {
-                Vector2.left * 25 + Vector2.up * 100,
-                Vector2.left * 25 + Vector2.up * 50,
-                Vector2.right * 25 + Vector2.up * 50,
-                Vector2.right * 25 + Vector2.up * 100
+                var strokes = new List<List<Vector2>>();
+
+                foreach (var stroke in template.strokes)
+                    strokes.Add(stroke.points);
+                
+                recognizer.AddSymbol(def.symbolId, strokes);
             }
-        });
+        }
     }
 
     #endregion

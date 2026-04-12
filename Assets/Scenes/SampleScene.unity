@@ -366,7 +366,7 @@ GameObject:
   - component: {fileID: 689598708}
   - component: {fileID: 689598707}
   m_Layer: 0
-  m_Name: SymbolInputCapture
+  m_Name: Symbol Input Capture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

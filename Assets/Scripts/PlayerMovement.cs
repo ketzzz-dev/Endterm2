@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Movement")]
     [SerializeField] private float speed = 10f;
     [SerializeField] private float acceleration = 10f;
     [SerializeField] private float deceleration = 10f;

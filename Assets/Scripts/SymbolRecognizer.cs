@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class Gesture
+public class Symbol
 {
-    public readonly string name;
+    public readonly string id;
     public readonly int strokeCount;
     public readonly List<float[]> templates = new();
 
-    public Gesture(string name, int strokeCount)
+    public Symbol(string id, int strokeCount)
     {
-        this.name = name;
+        this.id = id;
         this.strokeCount = strokeCount;
     }
 }
     
-public class GestureRecognizer
+public class SymbolRecognizer
 {
     public const int NumPoints = 64;
     public const float SquareSize = 250f;
@@ -24,26 +24,34 @@ public class GestureRecognizer
     private readonly float minScoreThreshold;
     private readonly float scoreMargin;
 
-    private readonly List<Gesture> gestures = new();
+    private readonly List<Symbol> symbols = new();
 
-    public GestureRecognizer(float minScoreThreshold = 0.75f, float scoreMargin = 0.05f)
+    public SymbolRecognizer(float minScoreThreshold = 0.75f, float scoreMargin = 0.05f)
     {
         this.minScoreThreshold = minScoreThreshold;
         this.scoreMargin = scoreMargin;
     }
 
-    public void AddGesture(string name, List<List<Vector2>> strokes)
+    public void AddSymbol(string name, List<List<Vector2>> strokes)
     {
         if (strokes == null || strokes.Count == 0)
             return;
         
-        var gesture = gestures.Find(g => g.name == name);
+        var loweredName = name.ToLowerInvariant();
+        var symbol = symbols.Find(g => g.id == loweredName);
 
-        if (gesture == null)
+        if (symbol == null)
         {
-            gesture = new Gesture(name, strokes.Count);
+            symbol = new Symbol(loweredName, strokes.Count);
             
-            gestures.Add(gesture);
+            symbols.Add(symbol);
+        }
+
+        if (symbol.strokeCount != strokes.Count)
+        {
+            Debug.LogWarning($"Gesture '{name}' has a different stroke count ({strokes.Count}) than existing templates ({symbol.strokeCount}). Skipping.");
+            
+            return;
         }
 
         var unistrokes = GenerateUnistrokes(strokes);
@@ -52,13 +60,13 @@ public class GestureRecognizer
         {
             var template = Vectorize(Normalize(unistroke));
             
-            gesture.templates.Add(template);
+            symbol.templates.Add(template);
         }
     }
 
     public string Recognize(List<List<Vector2>> strokes)
     {
-        if (strokes == null || strokes.Count == 0 || gestures.Count == 0)
+        if (strokes == null || strokes.Count == 0 || symbols.Count == 0)
             return null;
 
         var combined = CombineStrokes(strokes);
@@ -69,7 +77,7 @@ public class GestureRecognizer
         string bestMatch = null;
         string secondBestMatch = null;
 
-        foreach (var gesture in gestures)
+        foreach (var gesture in symbols)
         {
             if (gesture.strokeCount != strokes.Count)
                 continue;
@@ -89,12 +97,12 @@ public class GestureRecognizer
                 secondBestDistance = bestDistance;
                 bestDistance = bestTemplateDistance;
                 secondBestMatch = bestMatch;
-                bestMatch = gesture.name;
+                bestMatch = gesture.id;
             }
             else if (bestTemplateDistance < secondBestDistance)
             {
                 secondBestDistance = bestTemplateDistance;
-                secondBestMatch = gesture.name;
+                secondBestMatch = gesture.id;
             }
         }
 
@@ -102,6 +110,14 @@ public class GestureRecognizer
             return null;
         
         var bestScore = 1f - (bestDistance / (0.5f * Mathf.PI));
+
+        if (secondBestMatch == null)
+        {
+            Debug.Log($"Best match: {bestMatch} (score: {bestScore:F2}), No second match");
+            
+            return bestScore >= minScoreThreshold ? bestMatch : null;
+        }
+
         var secondBestScore = 1f - (secondBestDistance / (0.5f * Mathf.PI));
 
         Debug.Log($"Best match: {bestMatch} (score: {bestScore:F2}), Second best: {secondBestMatch} (score: {secondBestScore:F2})");
@@ -148,12 +164,12 @@ public class GestureRecognizer
     {
         var n = strokes.Count;
         var results = new List<List<List<Vector2>>>();
-
         var indices = Enumerable.Range(0, n).ToArray();
 
         while (true)
         {
             var permutation = new List<List<Vector2>>(n);
+            
             for (var i = 0; i < n; i++)
                 permutation.Add(strokes[indices[i]]);
 
@@ -161,12 +177,14 @@ public class GestureRecognizer
 
             // Generate next lexicographic permutation
             var k = n - 2;
+
             while (k >= 0 && indices[k] > indices[k + 1]) k--;
 
             if (k < 0)
                 break;
 
             var l = n - 1;
+
             while (indices[k] > indices[l]) l--;
 
             (indices[k], indices[l]) = (indices[l], indices[k]);
@@ -237,6 +255,7 @@ public class GestureRecognizer
         }
 
         var magnitude = Mathf.Sqrt(sum * sum + cross * cross);
+        
         magnitude = Mathf.Clamp01(magnitude);
 
         return Mathf.Acos(magnitude);
