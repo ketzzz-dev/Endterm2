@@ -16,9 +16,9 @@ public class SymbolInput : MonoBehaviour
     [Header("Symbols")]
     [SerializeField] private List<SymbolDefinition> symbolDefinitions;
 
-    public static event System.Action<string> OnSymbolRecognized;
+    public static event System.Action<string, Vector3> OnSymbolRecognized;
 
-    private const int MaxStrokes = 3;
+    private const int MaxStrokes = 4;
 
     private enum State { Idle, Drawing, Waiting }
     private State currentState = State.Idle;
@@ -41,7 +41,13 @@ public class SymbolInput : MonoBehaviour
 
     private void Start()
     {
+        var startTime = Time.timeAsDouble;
+
         LoadSymbols();
+
+        var elapsed = Time.timeAsDouble - startTime;
+
+        Debug.Log($"Loaded {symbolDefinitions.Count} symbols in {elapsed:F2} seconds.");
     }
 
     private void Update()
@@ -140,11 +146,12 @@ public class SymbolInput : MonoBehaviour
     private void HandleWaiting()
     {
         var pointer = Pointer.current;
+        var keyboard = Keyboard.current;
         
-        if (pointer == null)
+        if (pointer == null || keyboard == null)
             return;
         
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (keyboard.leftShiftKey.wasPressedThisFrame)
         {
             TryCast();
 
@@ -226,7 +233,12 @@ public class SymbolInput : MonoBehaviour
         var symbolId = recognizer.Recognize(strokes);
 
         if (!string.IsNullOrEmpty(symbolId))
-            OnSymbolRecognized?.Invoke(symbolId);
+        {
+            var center = GetStrokesCenter();
+            var worldPos = ScreenToWorld(center);
+
+            OnSymbolRecognized?.Invoke(symbolId, worldPos);
+        }
 
         ResetAll();
 
@@ -237,6 +249,23 @@ public class SymbolInput : MonoBehaviour
 
     #region Utilities
 
+    private Vector3 GetStrokesCenter()
+    {
+        var allPoints = new List<Vector2>();
+
+        foreach (var stroke in strokes)
+            allPoints.AddRange(stroke);
+        
+        if (allPoints.Count == 0)
+            return Vector2.zero;
+
+        var avgPoint = Vector2.zero;
+
+        foreach (var p in allPoints)
+            avgPoint += p;
+
+        return avgPoint / allPoints.Count;
+    }
     private Vector3 ScreenToWorld(Vector2 screenPos)
     {
         var z = -cam.transform.position.z;

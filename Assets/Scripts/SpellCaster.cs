@@ -26,11 +26,11 @@ public class SpellCaster : MonoBehaviour
         SymbolInput.OnSymbolRecognized -= TryCast;
     }
 
-    public void TryCast(string symbolId)
+    public void TryCast(string symbolId, Vector3 position)
     {
         if (spellMap.TryGetValue(symbolId, out var spell))
         {
-            Debug.Log($"Casting spell: {symbolId}");
+            Debug.Log($"Casting spell: {symbolId} at {position}");
         }
         else
         {

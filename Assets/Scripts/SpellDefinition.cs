@@ -7,4 +7,6 @@ public class SpellDefinition : ScriptableObject
 
     public float manaCost;
     public float cooldown;
+
+    // TODO: add functionality
 }

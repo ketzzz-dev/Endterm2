@@ -19,7 +19,7 @@ public class Symbol
 public class SymbolRecognizer
 {
     public const int NumPoints = 64;
-    public const float SquareSize = 250f;
+    public const float SquareSize = 500f;
 
     private readonly float minScoreThreshold;
     private readonly float scoreMargin;
@@ -266,7 +266,7 @@ public class SymbolRecognizer
         var pathLength = PathLength(points);
         
         if (pathLength < Mathf.Epsilon)
-            return Enumerable.Repeat(points[0], numPoints).ToList();
+            return Enumerable.Repeat(Vector2.zero, numPoints).ToList();
 
         var interval = pathLength / (numPoints - 1);
         var accumulatedDistance = 0f;

@@ -271,6 +271,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1616468388}
   smoothTime: 0.125
+--- !u!1 &539342754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 539342756}
+  - component: {fileID: 539342755}
+  m_Layer: 0
+  m_Name: Spell Caster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &539342755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539342754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a92337553d78db479c765771a7d5d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpellCaster
+  spells: []
+--- !u!4 &539342756
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539342754}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,7 +411,7 @@ GameObject:
   - component: {fileID: 689598708}
   - component: {fileID: 689598707}
   m_Layer: 0
-  m_Name: Symbol Input Capture
+  m_Name: Symbol Input
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -387,6 +432,10 @@ MonoBehaviour:
   strokeWindowDuration: 1
   minPointDistance: 5
   strokePrefab: {fileID: 8313083524474372762, guid: 12a8771dc7a7de346a21ffac6181e6ba, type: 3}
+  symbolDefinitions:
+  - {fileID: 11400000, guid: 72e18d5952c73884cb0c7e73b5f2dfae, type: 2}
+  - {fileID: 11400000, guid: a61735c16a29be1458b29a9a5865b28d, type: 2}
+  - {fileID: 11400000, guid: 64d8d89017d230e48b566e6e231cfa92, type: 2}
 --- !u!4 &689598708
 Transform:
   m_ObjectHideFlags: 0
@@ -435,7 +484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  acceleration: 6
+  acceleration: 9
   deceleration: 12
 --- !u!50 &1616468385
 Rigidbody2D:
@@ -582,3 +631,4 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 1616468388}
   - {fileID: 689598708}
+  - {fileID: 539342756}
