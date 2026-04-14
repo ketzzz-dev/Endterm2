@@ -28,7 +28,7 @@ public class SpellCaster : MonoBehaviour
         SymbolInput.OnSymbolRecognized -= TryCast;
     }
 
-    public void TryCast(string symbolId, Vector3 position)
+    private void TryCast(string symbolId, Vector3 position)
     {
         if (spellMap.TryGetValue(symbolId, out var spell))
         {

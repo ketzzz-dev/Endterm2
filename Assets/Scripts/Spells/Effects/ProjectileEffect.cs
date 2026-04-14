@@ -17,14 +17,12 @@ public class ProjectileEffect : SpellEffect
             return;
         }
 
-        Vector3 direction = (context.target - context.origin).normalized;
-        GameObject projectile = Instantiate(projectilePrefab, context.origin, Quaternion.LookRotation(direction));
-        Rigidbody rb = projectile.GetComponent<Rigidbody>();
+        var direction = (context.target - context.origin).normalized;
+        var projectile = Instantiate(projectilePrefab, context.origin, Quaternion.identity);
+        var rb = projectile.GetComponent<Rigidbody2D>();
 
         if (rb != null)
-        {
             rb.linearVelocity = direction * projectileSpeed;
-        }
 
         Destroy(projectile, projectileDuration);
     }
