@@ -5,6 +5,7 @@ public class Enemy : MonoBehaviour, IDamageable
 {
     // Set by the spawner at instantiation time, not in the Inspector
     public EnemyDefinition Definition { get; private set; }
+    public EnemyBehaviour Behaviour { get; private set; }
 
     private float currentHealth;
     private float damageTimer;
@@ -12,6 +13,7 @@ public class Enemy : MonoBehaviour, IDamageable
     public void Initialize(EnemyDefinition definition)
     {
         Definition = definition;
+        Behaviour = definition.behaviour;
         currentHealth = definition.maxHealth;
     }
 

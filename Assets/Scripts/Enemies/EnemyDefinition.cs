@@ -15,6 +15,6 @@ public class EnemyDefinition : ScriptableObject
     // How often contact damage is applied — prevents one-frame kill spikes
     public float damageCooldown = 0.5f;
 
-    [Header("Rewards")]
-    public int experienceValue = 5;
+    [Header("Behaviour")]
+    public EnemyBehaviour behaviour;
 }
