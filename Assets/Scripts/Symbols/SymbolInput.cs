@@ -151,7 +151,7 @@ public class SymbolInput : MonoBehaviour
         if (pointer == null || keyboard == null)
             return;
         
-        if (keyboard.leftShiftKey.wasPressedThisFrame)
+        if (keyboard.spaceKey.wasPressedThisFrame)
         {
             TryCast();
 
