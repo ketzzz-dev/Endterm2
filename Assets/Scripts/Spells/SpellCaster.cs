@@ -1,13 +1,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+[RequireComponent(typeof(PlayerStats))]
 public class SpellCaster : MonoBehaviour
 {
     [SerializeField] private List<SpellDefinition> spells;
 
     private readonly Dictionary<string, SpellDefinition> spellMap = new();
     private readonly Dictionary<string, float> cooldowns = new();
+
+    private PlayerStats playerStats;
+
+    private void Awake()
+    {
+        playerStats = GetComponent<PlayerStats>();
+    }
 
     private void Start()
     {
