@@ -33,5 +33,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("LastDirectionX", rigidbody.linearVelocity.x);
             animator.SetFloat("LastDirectionY", rigidbody.linearVelocity.y);
         }
+
+        animator.SetBool("IsRunning", rigidbody.linearVelocity.sqrMagnitude > 0.1f);
     }
 }

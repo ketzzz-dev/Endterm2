@@ -35,6 +35,7 @@ public class GestureEditorWindow : EditorWindow
         DrawTopBar();
 
         var canvasRect = GUILayoutUtility.GetRect(position.width, position.height - 150);
+        
         DrawCanvas(canvasRect);
 
         DrawControls();
@@ -316,12 +317,14 @@ public class GestureEditorWindow : EditorWindow
         if (targetSymbol == null)
         {
             Debug.LogWarning("No SymbolDefinition selected.");
+
             return;
         }
 
         if (strokes.Count == 0)
         {
             Debug.LogWarning("No strokes to save.");
+
             return;
         }
 
@@ -329,8 +332,11 @@ public class GestureEditorWindow : EditorWindow
 
         foreach (var stroke in strokes)
         {
-            var s = new Stroke();
-            s.points = new List<Vector2>(stroke);
+            var s = new Stroke
+            {
+                points = new List<Vector2>(stroke)
+            };
+
             template.strokes.Add(s);
         }
 
