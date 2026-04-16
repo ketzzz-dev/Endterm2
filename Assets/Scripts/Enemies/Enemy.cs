@@ -1,28 +1,25 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
-public class Enemy : MonoBehaviour, IDamageable
+[RequireComponent(typeof(Animator))]
+public abstract class Enemy : MonoBehaviour, IDamageable
 {
-    // Set by the spawner at instantiation time, not in the Inspector
-    public EnemyDefinition Definition { get; private set; }
+    [SerializeField] protected float maxHealth = 100f;
+    [SerializeField] private float contactDamage = 10f;
 
-    private float currentHealth;
+    private const float DamageCooldown = 1f;
+
+    protected float currentHealth;
     private float damageTimer;
 
-    private new Rigidbody2D rigidbody;
-    private EnemyBehaviourState behaviourState;
-
-    public void Initialize(EnemyDefinition definition)
-    {
-        Definition = definition;
-        currentHealth = definition.maxHealth;
-
-        behaviourState = definition.behaviour.CreateState();
-    }
+    private Animator animator;
 
     private void Awake()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+    }
+    private void Start()
+    {
+        currentHealth = maxHealth;
     }
 
     private void OnTriggerStay2D(Collider2D other)
@@ -35,12 +32,9 @@ public class Enemy : MonoBehaviour, IDamageable
 
         if (other.TryGetComponent<IDamageable>(out var target))
         {
-            if (Definition.behaviour == null)
-                return;
-            
-            target.TakeDamage(Definition.contactDamage);
+            target.TakeDamage(contactDamage);
 
-            damageTimer = Definition.damageCooldown;
+            damageTimer = DamageCooldown;
         }
     }
 
@@ -50,31 +44,16 @@ public class Enemy : MonoBehaviour, IDamageable
             damageTimer -= Time.deltaTime;
     }
 
-    private void FixedUpdate()
-    {
-        if (Definition.behaviour == null)
-            return;
-
-        var context = new EnemyBehaviourContext {};
-        var desiredVelocity = Definition.behaviour.GetDesiredVelocity(context, behaviourState);
-
-        rigidbody.linearVelocity = desiredVelocity;
-    }
-
     public void TakeDamage(float amount)
     {
-        if (Definition.behaviour == null)
-            return;
-        
-        currentHealth = Mathf.Clamp(currentHealth - amount, 0f, Definition.maxHealth);
+        currentHealth = Mathf.Clamp(currentHealth - amount, 0f, maxHealth);
 
         if (currentHealth <= 0f)
-            Die();
+            animator.SetTrigger("Die");
     }
 
-    private void Die()
+    private void OnDeathAnimationFinished()
     {
-        // Later: drop experience, play VFX, return to pool
         Destroy(gameObject);
     }
 }
