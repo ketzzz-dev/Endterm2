@@ -3,6 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public abstract class Enemy : MonoBehaviour, IDamageable
 {
+    [Header("Base Stats")]
     [SerializeField] protected float maxHealth = 100f;
     [SerializeField] private float contactDamage = 10f;
 
@@ -13,7 +14,7 @@ public abstract class Enemy : MonoBehaviour, IDamageable
 
     private Animator animator;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         animator = GetComponent<Animator>();
     }

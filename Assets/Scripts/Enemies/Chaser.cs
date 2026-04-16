@@ -3,13 +3,17 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Chaser : Enemy
 {
-    [SerializeField] private float moveSpeed = 3f;
+    [Header("Movement")]
+    [SerializeField] private float moveSpeed = 10f;
+    [SerializeField] private float acceleration = 10f;
 
     private new Rigidbody2D rigidbody;
     private Transform player;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
+
         rigidbody = GetComponent<Rigidbody2D>();
     }
     private void Start()
@@ -22,8 +26,10 @@ public class Chaser : Enemy
         if (player == null)
             return;
 
-        Vector2 direction = (player.position - transform.position).normalized;
+        var direction = (player.position - transform.position).normalized;
+        var targetVelocity = direction * moveSpeed;
+        var accelerationFactor = 1f - Mathf.Exp(-acceleration * Time.fixedDeltaTime);
 
-        rigidbody.linearVelocity = direction * moveSpeed;
+        rigidbody.linearVelocity = Vector2.Lerp(rigidbody.linearVelocity, targetVelocity, accelerationFactor);
     }
 }
