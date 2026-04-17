@@ -5,25 +5,27 @@ public abstract class Enemy : MonoBehaviour, IDamageable
 {
     [Header("Base Stats")]
     [SerializeField] protected float maxHealth = 100f;
-    [SerializeField] private float contactDamage = 10f;
+    [SerializeField] protected float contactDamage = 10f;
 
-    private const float DamageCooldown = 1f;
+    protected const float DamageCooldown = 1f;
 
     protected float currentHealth;
-    private float damageTimer;
+    protected float damageTimer;
 
-    private Animator animator;
+    protected bool isDying = false;
+
+    protected Animator animator;
 
     protected virtual void Awake()
     {
         animator = GetComponent<Animator>();
     }
-    private void Start()
+    protected virtual void Start()
     {
         currentHealth = maxHealth;
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    protected virtual void OnTriggerStay2D(Collider2D other)
     {
         if (!other.CompareTag("Player"))
             return;
@@ -33,27 +35,33 @@ public abstract class Enemy : MonoBehaviour, IDamageable
 
         if (other.TryGetComponent<IDamageable>(out var target))
         {
-            target.TakeDamage(contactDamage);
+            target.TakeDamage(contactDamage, default);
+
+            Debug.Log($"Enemy dealt {contactDamage} contact damage to player.");
 
             damageTimer = DamageCooldown;
         }
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         if (damageTimer > 0f)
             damageTimer -= Time.deltaTime;
     }
 
-    public void TakeDamage(float amount)
+    public virtual void TakeDamage(float amount, Vector2 knockback)
     {
         currentHealth = Mathf.Clamp(currentHealth - amount, 0f, maxHealth);
 
         if (currentHealth <= 0f)
+        {
+            isDying = true;
+
             animator.SetTrigger("Die");
+        }
     }
 
-    private void OnDeathAnimationFinished()
+    protected virtual void OnDeathAnimationFinished()
     {
         Destroy(gameObject);
     }

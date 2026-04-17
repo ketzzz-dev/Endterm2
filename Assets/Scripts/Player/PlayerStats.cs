@@ -5,8 +5,8 @@ public class PlayerStats : MonoBehaviour, IDamageable
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private float maxMana = 50f;
 
-    private float currentHealth;
-    private float currentMana;
+    public float currentHealth { get; private set; }
+    public float currentMana { get; private set; }
 
     private void Start()
     {
@@ -14,14 +14,12 @@ public class PlayerStats : MonoBehaviour, IDamageable
         currentMana = maxMana;
     }
 
-    public void TakeDamage(float amount)
+    public void TakeDamage(float amount, Vector2 knockback)
     {
         currentHealth = Mathf.Clamp(currentHealth - amount, 0, maxHealth);
 
         if (currentHealth <= 0)
-        {
             Die();
-        }
     }
 
     private void Die()

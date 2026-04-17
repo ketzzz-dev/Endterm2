@@ -72,6 +72,12 @@ public class SpellCaster : MonoBehaviour
             if (Time.time < cooldownEndTime)
                 return false;
         }
+        if (playerStats.currentMana < spell.manaCost)
+        {
+            Debug.Log("Not enough mana to cast the spell.");
+
+            return false;
+        }
 
         return true;
     }

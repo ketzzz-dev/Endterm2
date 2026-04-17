@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62090e3bb99597b4096969e7aeb750e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Chaser
-  maxHealth: 100
+  maxHealth: 40
   contactDamage: 10
   moveSpeed: 2.5
   acceleration: 2
