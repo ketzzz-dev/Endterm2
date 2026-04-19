@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7853984994455680318}
   - component: {fileID: 3501340729436936089}
   - component: {fileID: 3781419291466703355}
+  - component: {fileID: 6154630635801559964}
   m_Layer: 0
   m_Name: Ghost Ball
   m_TagString: Untagged
@@ -156,3 +157,16 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &6154630635801559964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5692761095867887941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb525a980f2da704bb08338bf34b2164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostBallProjectile
+  damage: 20

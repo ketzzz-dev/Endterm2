@@ -16,6 +16,7 @@ public class Shooter : Enemy
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firePoint;
 
+    private bool isShooting;
     private float shootTimer;
 
     private new Rigidbody2D rigidbody;
@@ -51,20 +52,21 @@ public class Shooter : Enemy
         var direction = (player.position - transform.position).normalized;
         var targetPosition = player.position - direction * orbitRadius;
 
-        var targetVelocity = isDying ? Vector3.zero : (targetPosition - transform.position).normalized * moveSpeed;
+        var targetVelocity = (isDying || isShooting) ? Vector3.zero : (targetPosition - transform.position).normalized * moveSpeed;
         var accelerationFactor = 1f - Mathf.Exp(-acceleration * Time.fixedDeltaTime);
 
         rigidbody.linearVelocity = Vector2.Lerp(rigidbody.linearVelocity, targetVelocity, accelerationFactor);
 
-        if (shootTimer <= 0f)
+        if (!isShooting && shootTimer <= 0f)
         {
             animator.SetTrigger("Shoot");
 
+            isShooting = true;
             shootTimer = shootCooldown;
         }
     }
 
-    private void OnAttackAnimationShoot()
+    private void OnShootAnimationShoot()
     {
         if (player == null)
             return;
@@ -77,5 +79,10 @@ public class Shooter : Enemy
             rb.linearVelocity = direction * bulletSpeed;
 
         Destroy(bullet, bulletDuration);
+    }
+
+    private void OnShootAnimationEnd()
+    {
+        isShooting = false;
     }
 }

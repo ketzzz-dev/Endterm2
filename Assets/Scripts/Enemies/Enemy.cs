@@ -9,7 +9,7 @@ public abstract class Enemy : MonoBehaviour, IDamageable
 
     protected const float DamageCooldown = 1f;
 
-    protected float currentHealth;
+    protected float currentHealth;  
     protected float damageTimer;
 
     protected bool isDying = false;
@@ -27,6 +27,9 @@ public abstract class Enemy : MonoBehaviour, IDamageable
 
     protected virtual void OnTriggerStay2D(Collider2D other)
     {
+        if (isDying)
+            return;
+        
         if (!other.CompareTag("Player"))
             return;
         
@@ -61,7 +64,7 @@ public abstract class Enemy : MonoBehaviour, IDamageable
         }
     }
 
-    protected virtual void OnDeathAnimationFinished()
+    protected virtual void OnDeathAnimationEnd()
     {
         Destroy(gameObject);
     }

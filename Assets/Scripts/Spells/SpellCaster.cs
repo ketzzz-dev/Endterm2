@@ -54,7 +54,7 @@ public class SpellCaster : MonoBehaviour
                 target = position
             });
 
-            StartCooldown(spell);
+            ApplyCosts(spell);
         }
         else
         {
@@ -82,9 +82,13 @@ public class SpellCaster : MonoBehaviour
         return true;
     }
 
-    private void StartCooldown(SpellDefinition spell)
+    private void ApplyCosts(SpellDefinition spell)
     {
-        if (spell != null)
-            cooldowns[spell.symbolId] = Time.time + spell.cooldown;
+        if (spell == null)
+            return;
+
+        cooldowns[spell.symbolId] = Time.time + spell.cooldown;
+        
+        playerStats.SpendMana(spell.manaCost);
     }
 }

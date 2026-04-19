@@ -204,5 +204,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Chaser
   maxHealth: 40
   contactDamage: 10
-  moveSpeed: 2.5
-  acceleration: 2
+  moveSpeed: 3.5
+  acceleration: 1.5

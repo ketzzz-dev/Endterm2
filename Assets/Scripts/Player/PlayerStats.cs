@@ -21,6 +21,11 @@ public class PlayerStats : MonoBehaviour, IDamageable
         if (currentHealth <= 0)
             Die();
     }
+    
+    public void SpendMana(float amount)
+    {
+        currentMana = Mathf.Clamp(currentMana - amount, 0, maxMana);
+    }
 
     private void Die()
     {
