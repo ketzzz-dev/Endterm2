@@ -8,6 +8,12 @@ public class PlayerStats : MonoBehaviour, IDamageable
     public float currentHealth { get; private set; }
     public float currentMana { get; private set; }
 
+    private SpriteBlinker spriteBlinker;
+
+    private void Awake()
+    {
+        spriteBlinker = GetComponent<SpriteBlinker>();
+    }
     private void Start()
     {
         currentHealth = maxHealth;
@@ -18,6 +24,8 @@ public class PlayerStats : MonoBehaviour, IDamageable
     {
         currentHealth = Mathf.Clamp(currentHealth - amount, 0, maxHealth);
 
+        if (spriteBlinker != null)
+            spriteBlinker.Blink();
         if (currentHealth <= 0)
             Die();
     }

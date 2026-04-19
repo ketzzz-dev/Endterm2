@@ -170,3 +170,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
   damage: 20
+  knockback: 5

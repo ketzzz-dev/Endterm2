@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 8908386928647319043}
   - component: {fileID: 139096737300435523}
   - component: {fileID: 9033774515838825118}
-  - component: {fileID: 9018368780220781999}
+  - component: {fileID: 2790064577604007450}
+  - component: {fileID: 1196538281193518217}
   m_Layer: 7
   m_Name: Charger
   m_TagString: Enemy
@@ -62,7 +63,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: b93cf1c6d2f35c24eb4daa72e8170416, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -190,7 +191,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.6, y: 0.8}
   m_EdgeRadius: 0
---- !u!114 &9018368780220781999
+--- !u!114 &2790064577604007450
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,12 +200,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 5408701646641620300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b6d2d2ca0dc5794c9d0a62b01c0a656, type: 3}
+  m_Script: {fileID: 11500000, guid: bef6a8de425f31f48bff24545254733d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Charger
-  maxHealth: 80
-  contactDamage: 30
-  moveSpeed: 1.5
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  maxHealth: 60
+  moveSpeed: 2.5
   acceleration: 2
-  chargeSpeed: 15
-  chargeCooldown: 7
+  contactDamage: 20
+  contactKnockback: 7
+  behaviours:
+  - {fileID: 11400000, guid: f385b565135a01240a49cf3db8e80184, type: 2}
+--- !u!114 &1196538281193518217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5408701646641620300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7049fea2569477b4fb6507ba703529fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteBlinker
+  blinkDuration: 0.25

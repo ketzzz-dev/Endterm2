@@ -1,70 +1,167 @@
+using System.Collections.Generic;
+using System.Linq;
+using NUnit.Framework;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
-public abstract class Enemy : MonoBehaviour, IDamageable
+[RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
+public class Enemy : MonoBehaviour, IDamageable
 {
-    [Header("Base Stats")]
-    [SerializeField] protected float maxHealth = 100f;
-    [SerializeField] protected float contactDamage = 10f;
+    [Header("Stats")]
+    [SerializeField] private float maxHealth = 100f;
+    [SerializeField] private float moveSpeed = 10f;
+    [SerializeField] private float acceleration = 10f;
+    [SerializeField] private float contactDamage = 10f;
+    [SerializeField] private float contactKnockback = 5f;
 
-    protected const float DamageCooldown = 1f;
+    [Header("Behaviours")]
+    [SerializeField] private List<EnemyBehaviour> behaviours;
 
-    protected float currentHealth;  
-    protected float damageTimer;
+    private const float DamageCooldown = 1f;
 
-    protected bool isDying = false;
+    private EnemyContext context = new();
 
-    protected Animator animator;
+    private new Rigidbody2D rigidbody;
+    private Animator animator;
+    private SpriteBlinker spriteBlinker;
 
-    protected virtual void Awake()
+    private Transform playerTransform;
+
+    private float damageTimer = 0f;
+
+    private void Awake()
     {
+        rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        spriteBlinker = GetComponent<SpriteBlinker>();
     }
-    protected virtual void Start()
+
+    private void Start()
     {
-        currentHealth = maxHealth;
+        context.currentHealth = maxHealth;
+        playerTransform = PlayerReference.Instance;
+
+        foreach (var behaviour in behaviours)
+            behaviour.Initialize(this);
     }
 
-    protected virtual void OnTriggerStay2D(Collider2D other)
-    {
-        if (isDying)
-            return;
-        
-        if (!other.CompareTag("Player"))
-            return;
-        
-        if (damageTimer > 0f)
-            return;
-
-        if (other.TryGetComponent<IDamageable>(out var target))
-        {
-            target.TakeDamage(contactDamage, default);
-
-            Debug.Log($"Enemy dealt {contactDamage} contact damage to player.");
-
-            damageTimer = DamageCooldown;
-        }
-    }
-
-    protected virtual void Update()
+    private void Update()
     {
         if (damageTimer > 0f)
             damageTimer -= Time.deltaTime;
     }
 
-    public virtual void TakeDamage(float amount, Vector2 knockback)
+    private void FixedUpdate()
     {
-        currentHealth = Mathf.Clamp(currentHealth - amount, 0f, maxHealth);
+        UpdateSensors();
+        ExecuteBehaviours();
+        TriggerAction();
 
-        if (currentHealth <= 0f)
+        var targetVelocity = Vector2.zero;
+
+        if (!context.isDying && !context.isActionLocked)
+            targetVelocity = Vector2.ClampMagnitude(context.moveDirection, 1f) * moveSpeed;
+
+        var t = 1f - Mathf.Exp(-acceleration * Time.fixedDeltaTime);
+
+        rigidbody.linearVelocity = Vector2.Lerp(rigidbody.linearVelocity, targetVelocity, t);
+
+        if (!context.isDying)
         {
-            isDying = true;
-
-            animator.SetTrigger("Die");
+            animator.SetFloat("DirectionX", context.directionToPlayer.x);
+            animator.SetFloat("DirectionY", context.directionToPlayer.y);
         }
     }
 
-    protected virtual void OnDeathAnimationEnd()
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (context.isDying)
+            return;
+        
+        if (collision.CompareTag("Player") && damageTimer <= 0f)
+        {
+            if (collision.TryGetComponent(out IDamageable damageable))
+                damageable.TakeDamage(contactDamage, context.directionToPlayer * contactKnockback);
+
+            damageTimer = DamageCooldown;
+        }
+    }
+
+    public void TakeDamage(float amount, Vector2 knockback)
+    {
+        if (context.isDying)
+            return;
+
+        rigidbody.AddForce(knockback, ForceMode2D.Impulse);
+        context.currentHealth = Mathf.Clamp(context.currentHealth - amount, 0f, maxHealth);
+
+        if (spriteBlinker != null)
+            spriteBlinker.Blink();
+        if (context.currentHealth <= 0f)
+            animator.SetTrigger("Die");
+    }
+
+    private void UpdateSensors()
+    {
+        if (playerTransform == null || context.isDying)
+            return;
+        
+        var toPlayer = playerTransform.position - transform.position;
+        var distance = toPlayer.magnitude;
+
+        context.playerPosition = playerTransform.position;
+        context.directionToPlayer = toPlayer / distance;
+        context.distanceToPlayer = distance;
+    }
+
+    private void ExecuteBehaviours()
+    {
+        if (context.isDying)
+            return;
+
+        context.moveDirection = Vector2.zero;
+        context.actionTrigger = null;
+
+        var eligible = new List<EnemyBehaviour>();
+
+        foreach (var b in behaviours)
+        {
+            if (!b.CanExecute(context))
+                continue;
+
+            int insertIndex = eligible.Count;
+
+            for (int i = 0; i < eligible.Count; i++)
+            {
+                if (b.GetPriority(context) < eligible[i].GetPriority(context))
+                {
+                    insertIndex = i;
+                    break;
+                }
+            }
+
+            eligible.Insert(insertIndex, b);
+        }
+
+        foreach (var behaviour in eligible)
+            behaviour.Execute(context);
+    }
+
+    private void TriggerAction()
+    {
+        if (context.isDying || context.isActionLocked || string.IsNullOrEmpty(context.actionTrigger))
+            return;
+
+        animator.SetTrigger(context.actionTrigger);
+
+        context.isActionLocked = true;
+    }
+
+    private void OnActionAnimationFinished()
+    {
+        context.isActionLocked = false;
+    }
+    
+    private void OnDeathAnimationFinished()
     {
         Destroy(gameObject);
     }

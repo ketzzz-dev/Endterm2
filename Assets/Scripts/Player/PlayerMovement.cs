@@ -25,9 +25,9 @@ public class PlayerMovement : MonoBehaviour
         var isMoving = moveInput.sqrMagnitude > 0f;
         
         var accelerationRate = isMoving ? acceleration : deceleration;
-        var accelerationFactor = 1f - Mathf.Exp(-accelerationRate * Time.fixedDeltaTime);
+        var t = 1f - Mathf.Exp(-accelerationRate * Time.fixedDeltaTime);
         
-        rigidbody.linearVelocity = Vector2.Lerp(rigidbody.linearVelocity, targetVelocity, accelerationFactor);
+        rigidbody.linearVelocity = Vector2.Lerp(rigidbody.linearVelocity, targetVelocity, t);
 
         if (isMoving)
         {

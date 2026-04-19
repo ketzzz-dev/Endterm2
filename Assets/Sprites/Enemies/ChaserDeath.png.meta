@@ -32,6 +32,48 @@ TextureImporter:
   - first:
       213: 1973807832539194178
     second: ChaserDeath_9
+  - first:
+      213: 8845360230504029655
+    second: ChaserDeath_10
+  - first:
+      213: 9081186830730562165
+    second: ChaserDeath_11
+  - first:
+      213: -4325436038915960776
+    second: ChaserDeath_12
+  - first:
+      213: -4574657739209855911
+    second: ChaserDeath_13
+  - first:
+      213: 1725882378977898065
+    second: ChaserDeath_14
+  - first:
+      213: -6585582419030472078
+    second: ChaserDeath_15
+  - first:
+      213: -4438458600059711853
+    second: ChaserDeath_16
+  - first:
+      213: 3187666847570227469
+    second: ChaserDeath_17
+  - first:
+      213: -1556737195804618564
+    second: ChaserDeath_18
+  - first:
+      213: -4704011142026580125
+    second: ChaserDeath_19
+  - first:
+      213: 6541566268575161328
+    second: ChaserDeath_20
+  - first:
+      213: -3102097711588006869
+    second: ChaserDeath_21
+  - first:
+      213: -9208512554236479768
+    second: ChaserDeath_22
+  - first:
+      213: -1582577167677020930
+    second: ChaserDeath_23
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -131,7 +173,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 512
+        y: 0
         width: 256
         height: 256
       alignment: 0
@@ -153,7 +195,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 512
+        y: 0
         width: 256
         height: 256
       alignment: 0
@@ -175,7 +217,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 512
+        y: 0
         width: 256
         height: 256
       alignment: 0
@@ -196,8 +238,8 @@ TextureImporter:
       name: ChaserDeath_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
+        x: 768
+        y: 0
         width: 256
         height: 256
       alignment: 0
@@ -218,8 +260,8 @@ TextureImporter:
       name: ChaserDeath_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
+        x: 1024
+        y: 0
         width: 256
         height: 256
       alignment: 0
@@ -240,8 +282,8 @@ TextureImporter:
       name: ChaserDeath_5
       rect:
         serializedVersion: 2
-        x: 512
-        y: 256
+        x: 1280
+        y: 0
         width: 256
         height: 256
       alignment: 0
@@ -258,33 +300,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: ChaserDeath_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7d92da3784e91aa70800000000000000
-      internalID: 8836517977893186007
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 30f4df77e11cdda44b8414c778fe389a
+    spriteID: 679c5698435cac74190a5978028e7811
     internalID: 0
     vertices: []
     indices: 
@@ -294,7 +314,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":3.0},"gridSpriteSize":{"x":256.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":256.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       ChaserDeath_0: 321464240339285881
       ChaserDeath_1: 4517513975343742297
@@ -302,7 +322,6 @@ TextureImporter:
       ChaserDeath_3: 6425623904757115355
       ChaserDeath_4: 919202452532816858
       ChaserDeath_5: 7179397468200312781
-      ChaserDeath_6: 8836517977893186007
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
