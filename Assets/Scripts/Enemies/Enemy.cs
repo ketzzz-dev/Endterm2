@@ -1,6 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
-using NUnit.Framework;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
@@ -12,15 +10,15 @@ public class Enemy : MonoBehaviour, IDamageable
     [SerializeField] private float acceleration = 10f;
     [SerializeField] private float contactDamage = 10f;
     [SerializeField] private float contactKnockback = 5f;
+    [SerializeField] [Range(0f, 1f)] private float knockbackReduction = 0f;
 
     [Header("Behaviours")]
     [SerializeField] private List<EnemyBehaviour> behaviours;
 
     private const float DamageCooldown = 1f;
 
-    private EnemyContext context = new();
-
-    private new Rigidbody2D rigidbody;
+    public EnemyContext context { get; private set; } = new();
+    public new Rigidbody2D rigidbody { get; private set; }
     private Animator animator;
     private SpriteBlinker spriteBlinker;
 
@@ -91,7 +89,7 @@ public class Enemy : MonoBehaviour, IDamageable
         if (context.isDying)
             return;
 
-        rigidbody.AddForce(knockback, ForceMode2D.Impulse);
+        rigidbody.AddForce(knockback * (1f - knockbackReduction), ForceMode2D.Impulse);
         context.currentHealth = Mathf.Clamp(context.currentHealth - amount, 0f, maxHealth);
 
         if (spriteBlinker != null)
@@ -135,6 +133,7 @@ public class Enemy : MonoBehaviour, IDamageable
                 if (b.GetPriority(context) < eligible[i].GetPriority(context))
                 {
                     insertIndex = i;
+
                     break;
                 }
             }

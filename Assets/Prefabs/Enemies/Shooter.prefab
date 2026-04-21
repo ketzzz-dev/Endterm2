@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 139096737300435523}
   - component: {fileID: 9033774515838825118}
   - component: {fileID: 4663530546919654876}
+  - component: {fileID: 4720596397642575408}
   - component: {fileID: 604207197451773963}
   m_Layer: 7
   m_Name: Shooter
@@ -211,6 +212,23 @@ MonoBehaviour:
   contactKnockback: 3
   behaviours:
   - {fileID: 11400000, guid: f385b565135a01240a49cf3db8e80184, type: 2}
+  - {fileID: 11400000, guid: d6c724e82554b694abfe9c5a7bab45c9, type: 2}
+  - {fileID: 11400000, guid: 605990344c9f1104391045c1a933e241, type: 2}
+--- !u!114 &4720596397642575408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5408701646641620300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47c62a083e9705144b6a2a4ad2bc894c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShootAction
+  firePoint: {fileID: 627300700062162951}
+  projectilePrefab: {fileID: 5692761095867887941, guid: eee39c77bebcf614fb6759c335b32e85, type: 3}
+  projectileSpeed: 10
 --- !u!114 &604207197451773963
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -204,10 +204,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   maxHealth: 40
-  moveSpeed: 3.5
-  acceleration: 2
+  moveSpeed: 4
+  acceleration: 1.5
   contactDamage: 10
   contactKnockback: 5
+  knockbackReduction: 0.25
   behaviours:
   - {fileID: 11400000, guid: f385b565135a01240a49cf3db8e80184, type: 2}
 --- !u!114 &8480513167015189827
