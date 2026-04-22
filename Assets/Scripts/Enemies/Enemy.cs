@@ -95,7 +95,11 @@ public class Enemy : MonoBehaviour, IDamageable
         if (spriteBlinker != null)
             spriteBlinker.Blink();
         if (context.currentHealth <= 0f)
+        {
             animator.SetTrigger("Die");
+            
+            context.isDying = true;
+        }
     }
 
     private void UpdateSensors()
