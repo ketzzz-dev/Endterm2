@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17eb7507f54dbf74597a7d55bec6d5d3, type: 3}
-  m_Name: Charge
-  m_EditorClassIdentifier: Assembly-CSharp::ChargeBehaviour
-  cooldown: 7
+  m_Script: {fileID: 11500000, guid: 9ccdb5d3d77a1de47954578540fcfe5a, type: 3}
+  m_Name: ChaseBehaviour
+  m_EditorClassIdentifier: Assembly-CSharp::ChaseBehaviour
+  optimalRange: 1
+  basePriority: 1

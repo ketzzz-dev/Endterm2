@@ -210,6 +210,8 @@ MonoBehaviour:
   acceleration: 2.5
   contactDamage: 10
   contactKnockback: 3
+  knockbackReduction: 0
+  enemyDetectionRadius: 3
   behaviours:
   - {fileID: 11400000, guid: f385b565135a01240a49cf3db8e80184, type: 2}
   - {fileID: 11400000, guid: d6c724e82554b694abfe9c5a7bab45c9, type: 2}

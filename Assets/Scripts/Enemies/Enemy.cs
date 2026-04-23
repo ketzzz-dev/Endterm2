@@ -12,6 +12,10 @@ public class Enemy : MonoBehaviour, IDamageable
     [SerializeField] private float contactKnockback = 5f;
     [SerializeField] [Range(0f, 1f)] private float knockbackReduction = 0f;
 
+    [Header("Sensors")]
+    [SerializeField] private float enemyDetectionRadius = 3f;
+
+
     [Header("Behaviours")]
     [SerializeField] private List<EnemyBehaviour> behaviours;
 
@@ -57,7 +61,7 @@ public class Enemy : MonoBehaviour, IDamageable
         var targetVelocity = Vector2.zero;
 
         if (!context.isDying && !context.isActionLocked)
-            targetVelocity = Vector2.ClampMagnitude(context.moveDirection, 1f) * moveSpeed;
+            targetVelocity = Vector2.ClampMagnitude(context.desiredDirection, 1f) * moveSpeed;
 
         var t = 1f - Mathf.Exp(-acceleration * Time.fixedDeltaTime);
 
@@ -113,6 +117,16 @@ public class Enemy : MonoBehaviour, IDamageable
         context.playerPosition = playerTransform.position;
         context.directionToPlayer = toPlayer / distance;
         context.distanceToPlayer = distance;
+
+        context.nearbyEnemies.Clear();
+
+        var colliders = Physics2D.OverlapCircleAll(transform.position, enemyDetectionRadius);
+
+        foreach (var collider in colliders)
+        {
+            if (collider.gameObject != gameObject && collider.CompareTag("Enemy"))
+                context.nearbyEnemies.Add(collider.transform);
+        }
     }
 
     private void ExecuteBehaviours()
@@ -120,7 +134,7 @@ public class Enemy : MonoBehaviour, IDamageable
         if (context.isDying)
             return;
 
-        context.moveDirection = Vector2.zero;
+        context.desiredDirection = Vector2.zero;
         context.actionTrigger = null;
 
         var eligible = new List<EnemyBehaviour>();

@@ -9,7 +9,4 @@ public abstract class EnemyAction : MonoBehaviour
     {
         enemy = GetComponent<Enemy>();
     }
-
-    protected virtual void OnActionAnimationStarted() {}
-    protected virtual void OnActionAnimationFinished() {}
 }

@@ -209,6 +209,7 @@ MonoBehaviour:
   contactDamage: 10
   contactKnockback: 5
   knockbackReduction: 0.25
+  enemyDetectionRadius: 3
   behaviours:
   - {fileID: 11400000, guid: f385b565135a01240a49cf3db8e80184, type: 2}
 --- !u!114 &8480513167015189827

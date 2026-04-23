@@ -41,6 +41,48 @@ TextureImporter:
   - first:
       213: -1306060363683325999
     second: ChargerIdle_12
+  - first:
+      213: -8674379846588369739
+    second: ChargerIdle_13
+  - first:
+      213: 7198138936593284274
+    second: ChargerIdle_14
+  - first:
+      213: -5513662551748295776
+    second: ChargerIdle_15
+  - first:
+      213: -3701040029986127809
+    second: ChargerIdle_16
+  - first:
+      213: 6048774921863078343
+    second: ChargerIdle_17
+  - first:
+      213: 5420256262310201205
+    second: ChargerIdle_18
+  - first:
+      213: 8764315757735194785
+    second: ChargerIdle_19
+  - first:
+      213: -2642662746184899116
+    second: ChargerIdle_20
+  - first:
+      213: -3847606523794342794
+    second: ChargerIdle_21
+  - first:
+      213: 4721917810089651884
+    second: ChargerIdle_22
+  - first:
+      213: -4519203777702355657
+    second: ChargerIdle_23
+  - first:
+      213: -4473126666595272721
+    second: ChargerIdle_24
+  - first:
+      213: 5832637321403120179
+    second: ChargerIdle_25
+  - first:
+      213: -9184327442002531343
+    second: ChargerIdle_26
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -87,7 +129,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 160
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -140,9 +182,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 256
-        width: 256
-        height: 256
+        y: 400
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,10 +203,10 @@ TextureImporter:
       name: ChargerIdle_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 256
-        height: 256
+        x: 400
+        y: 400
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,10 +225,10 @@ TextureImporter:
       name: ChargerIdle_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 256
-        width: 256
-        height: 256
+        x: 800
+        y: 400
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +247,10 @@ TextureImporter:
       name: ChargerIdle_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 256
-        width: 256
-        height: 256
+        x: 1200
+        y: 400
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +269,10 @@ TextureImporter:
       name: ChargerIdle_4
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 256
-        width: 256
-        height: 256
+        x: 1600
+        y: 400
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,10 +291,10 @@ TextureImporter:
       name: ChargerIdle_5
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 256
-        width: 256
-        height: 256
+        x: 0
+        y: 0
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,10 +313,10 @@ TextureImporter:
       name: ChargerIdle_6
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 256
-        width: 256
-        height: 256
+        x: 400
+        y: 0
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,10 +335,10 @@ TextureImporter:
       name: ChargerIdle_7
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 256
-        width: 256
-        height: 256
+        x: 800
+        y: 0
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,10 +357,10 @@ TextureImporter:
       name: ChargerIdle_8
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1200
         y: 0
-        width: 256
-        height: 256
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,99 +375,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: ChargerIdle_9
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c59d2e89317f4ad40800000000000000
-      internalID: 5594868300642441564
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChargerIdle_10
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ded449d5395d1d200800000000000000
-      internalID: 203178287115292141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChargerIdle_11
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b049f19c587b4670800000000000000
-      internalID: 8524039058710151351
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChargerIdle_12
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1d7107fd401ffdde0800000000000000
-      internalID: -1306060363683325999
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ae4632bf341a6a945bdf8bd749f93a24
+    spriteID: 04030fe8e273ccb4593e3b5bf5f2540e
     internalID: 0
     vertices: []
     indices: 
@@ -435,13 +389,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":2.0},"gridSpriteSize":{"x":256.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":2.0},"gridSpriteSize":{"x":400.0,"y":400.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       ChargerIdle_0: 2540373748370778859
       ChargerIdle_1: 9061146915640202189
-      ChargerIdle_10: 203178287115292141
-      ChargerIdle_11: 8524039058710151351
-      ChargerIdle_12: -1306060363683325999
       ChargerIdle_2: 4015872067229908623
       ChargerIdle_3: 1584885147071828786
       ChargerIdle_4: -3956669288083060750
@@ -449,7 +400,6 @@ TextureImporter:
       ChargerIdle_6: 4684025072944675369
       ChargerIdle_7: 1783061957383965612
       ChargerIdle_8: 4662452631655188769
-      ChargerIdle_9: 5594868300642441564
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

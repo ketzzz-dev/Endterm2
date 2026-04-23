@@ -11,6 +11,6 @@ public class DistanceBehaviour : EnemyBehaviour
 
     public override void Execute(EnemyContext context)
     {
-        context.moveDirection = -context.directionToPlayer;
+        context.desiredDirection = -context.directionToPlayer;
     }
 }
