@@ -39,11 +39,17 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
+  - name: Ground
     uniqueID: 3927511881
+    locked: 0
+  - name: PropsBehind
+    uniqueID: 4210693233
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: PropsFront
+    uniqueID: 3418234101
     locked: 0
   m_RenderingLayers:
   - Default
