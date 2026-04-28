@@ -5,7 +5,7 @@ public class ShootBehaviour : EnemyBehaviour
 {
     [SerializeField] private float cooldown = 5f;
 
-    public override bool CanExecute(EnemyContext context) => !context.isActionLocked;
+    public override bool CanExecute(EnemyContext context) => !context.isActionLocked && context.timers["ShootCooldown"] <= 0f;
     public override float GetPriority(EnemyContext context) => context.timers["ShootCooldown"] <= 0f ? float.MaxValue : 0f;
 
     public override void Initialize(Enemy enemy)
@@ -17,13 +17,7 @@ public class ShootBehaviour : EnemyBehaviour
 
     public override void Execute(EnemyContext context)
     {
-        context.timers["ShootCooldown"] -= Time.fixedDeltaTime;
-
-        if (context.timers["ShootCooldown"] <= 0f)
-        {
-            context.actionTrigger = "Shoot";
-
-            context.timers["ShootCooldown"] = cooldown;
-        }
+        context.actionTrigger = "Shoot";
+        context.timers["ShootCooldown"] = cooldown;
     }
 }

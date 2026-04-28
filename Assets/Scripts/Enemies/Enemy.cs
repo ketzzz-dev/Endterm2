@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour, IDamageable
     [SerializeField] [Range(0f, 1f)] private float knockbackReduction = 0f;
 
     [Header("Sensors")]
-    [SerializeField] private float enemyDetectionRadius = 3f;
+    [SerializeField] private float enemyDetectionRadius = 1.5f;
 
 
     [Header("Behaviours")]
@@ -62,6 +62,17 @@ public class Enemy : MonoBehaviour, IDamageable
 
         if (!context.isDying && !context.isActionLocked)
             targetVelocity = Vector2.ClampMagnitude(context.desiredDirection, 1f) * moveSpeed;
+        
+        foreach (var other in context.nearbyEnemies)
+        {
+            if (other == null) continue;
+
+            var diff = (Vector2)(other.position - transform.position);
+            var distance = diff.magnitude;
+
+            if (distance < enemyDetectionRadius && distance > Mathf.Epsilon)
+                targetVelocity -= diff.normalized * (enemyDetectionRadius - distance);
+        }
 
         var t = 1f - Mathf.Exp(-acceleration * Time.fixedDeltaTime);
 
@@ -117,6 +128,13 @@ public class Enemy : MonoBehaviour, IDamageable
         context.playerPosition = playerTransform.position;
         context.directionToPlayer = toPlayer / distance;
         context.distanceToPlayer = distance;
+
+        // count down timers
+        var keys = new List<string>(context.timers.Keys);
+
+        foreach (var key in keys)
+            context.timers[key] -= Time.fixedDeltaTime * Random.value;
+
 
         context.nearbyEnemies.Clear();
 

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ShieldEffect", menuName = "Scriptable Objects/ShieldEffect")]
+[CreateAssetMenu(fileName = "ShieldEffect", menuName = "Spells/Effects/ShieldEffect")]
 public class ShieldEffect : ScriptableObject
 {
     

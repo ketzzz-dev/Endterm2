@@ -10,14 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 6355803719640300456}
   - component: {fileID: 5510112108502997891}
-  - component: {fileID: 8908386928647319043}
+  - component: {fileID: 3019261236063073783}
   - component: {fileID: 139096737300435523}
   - component: {fileID: 9033774515838825118}
-  - component: {fileID: 2790064577604007450}
-  - component: {fileID: 3735360052448505112}
-  - component: {fileID: 1196538281193518217}
+  - component: {fileID: 2824908010227473389}
+  - component: {fileID: 8480513167015189827}
   m_Layer: 7
-  m_Name: Charger
+  m_Name: Stunner
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,17 +86,17 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2540373748370778859, guid: 4617243f946472f47a4f456047ae4516, type: 3}
+  m_Sprite: {fileID: -4969844048086716758, guid: 1fab7388fc1c2924e81d06890defff54, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.99, y: 2.28}
+  m_Size: {x: 1.6, y: 1.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!95 &8908386928647319043
+--- !u!95 &3019261236063073783
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -107,7 +106,7 @@ Animator:
   m_GameObject: {fileID: 5408701646641620300}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f072361706d545d4e9f6805152248c49, type: 2}
+  m_Controller: {fileID: 9100000, guid: e8e46b6bbda62dd4fb3ebbe485c3764b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -180,19 +179,19 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.1}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.5, y: 2.5}
-    newSize: {x: 1.99, y: 2.28}
+    oldSize: {x: 1.6, y: 1.6}
+    newSize: {x: 1.6, y: 1.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.6, y: 0.8}
+  m_Size: {x: 0.4, y: 0.7}
   m_EdgeRadius: 0
---- !u!114 &2790064577604007450
+--- !u!114 &2824908010227473389
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -204,30 +203,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bef6a8de425f31f48bff24545254733d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  maxHealth: 60
-  moveSpeed: 2.5
-  acceleration: 2
-  contactDamage: 20
-  contactKnockback: 7
-  knockbackReduction: 0.5
+  maxHealth: 40
+  moveSpeed: 4
+  acceleration: 1.5
+  contactDamage: 10
+  contactKnockback: 5
+  knockbackReduction: 0
   enemyDetectionRadius: 1.5
   behaviours:
   - {fileID: 11400000, guid: f385b565135a01240a49cf3db8e80184, type: 2}
-  - {fileID: 11400000, guid: 290182a7d1c9cc34bbf5eebffb93aa3c, type: 2}
---- !u!114 &3735360052448505112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5408701646641620300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a193f3898eae9324890788742fd7ddc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChargeAction
-  chargeSpeed: 15
---- !u!114 &1196538281193518217
+--- !u!114 &8480513167015189827
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

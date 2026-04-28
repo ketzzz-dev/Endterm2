@@ -1,22 +1,37 @@
 fileFormatVersion: 2
-guid: 62ed6b4eb57fbec4b83e8c277fe2e4f1
+guid: 6c5dc51cc268ff7489225bdaea05462c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3010729093302266144
-    second: ShooterDeath_0
+      213: 740577078735547673
+    second: SpitterDeath_0
   - first:
-      213: 8458863398578053211
-    second: ShooterDeath_1
+      213: 5421417976360517802
+    second: SpitterDeath_1
   - first:
-      213: -1282443425723119990
-    second: ShooterDeath_2
+      213: -7770276892679760452
+    second: SpitterDeath_2
   - first:
-      213: 7528927511820256568
-    second: ShooterDeath_3
+      213: -3860554863351465199
+    second: SpitterDeath_3
   - first:
-      213: -6088279472057322510
-    second: ShooterDeath_4
+      213: 7265920077534694955
+    second: SpitterDeath_4
+  - first:
+      213: -8829595945526780665
+    second: SpitterDeath_5
+  - first:
+      213: 4923619755280407835
+    second: SpitterDeath_6
+  - first:
+      213: 6202707060940509879
+    second: SpitterDeath_7
+  - first:
+      213: -1179022249640094646
+    second: SpitterDeath_8
+  - first:
+      213: -5436816963923888969
+    second: SpitterDeath_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,7 +127,139 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ShooterDeath_0
+      name: SpitterDeath_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d24daedee074a00800000000000000
+      internalID: 740577078735547673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpitterDeath_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0c2e3fceebc3b40800000000000000
+      internalID: 5421417976360517802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpitterDeath_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb59565b55e6a2490800000000000000
+      internalID: -7770276892679760452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpitterDeath_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b770e4ecd8c6ac0800000000000000
+      internalID: -3860554863351465199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpitterDeath_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e85d360dbb5d460800000000000000
+      internalID: 7265920077534694955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpitterDeath_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d95acc449f67580800000000000000
+      internalID: -8829595945526780665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpitterDeath_6
       rect:
         serializedVersion: 2
         x: 0
@@ -127,96 +274,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0292739a82248c920800000000000000
-      internalID: 3010729093302266144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShooterDeath_1
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b506ccba17be36570800000000000000
-      internalID: 8458863398578053211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShooterDeath_2
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a860d3dbf78d33ee0800000000000000
-      internalID: -1282443425723119990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShooterDeath_3
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 83546b99eaf1c7860800000000000000
-      internalID: 7528927511820256568
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShooterDeath_4
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2f378b6c316128ba0800000000000000
-      internalID: -6088279472057322510
+      spriteID: b1d959ab416345440800000000000000
+      internalID: 4923619755280407835
       vertices: []
       indices: 
       edges: []
@@ -225,7 +284,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2ae4bdeaa9044754fb393d6acb25130b
+    spriteID: e208c5a926c0d0343abaffd5c3847f5d
     internalID: 0
     vertices: []
     indices: 
@@ -235,13 +294,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":256.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":3.0},"gridSpriteSize":{"x":256.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      ShooterDeath_0: 3010729093302266144
-      ShooterDeath_1: 8458863398578053211
-      ShooterDeath_2: -1282443425723119990
-      ShooterDeath_3: 7528927511820256568
-      ShooterDeath_4: -6088279472057322510
+      SpitterDeath_0: 740577078735547673
+      SpitterDeath_1: 5421417976360517802
+      SpitterDeath_2: -7770276892679760452
+      SpitterDeath_3: -3860554863351465199
+      SpitterDeath_4: 7265920077534694955
+      SpitterDeath_5: -8829595945526780665
+      SpitterDeath_6: 4923619755280407835
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

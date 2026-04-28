@@ -41,6 +41,471 @@ TextureImporter:
   - first:
       213: -7280242133066608597
     second: ShooterIdle_12
+  - first:
+      213: -6480727964016084301
+    second: ShooterIdle_13
+  - first:
+      213: 1654321974875845793
+    second: ShooterIdle_14
+  - first:
+      213: 1575650240688924359
+    second: ShooterIdle_15
+  - first:
+      213: -2439752128080609124
+    second: ShooterIdle_16
+  - first:
+      213: -3802871153301376483
+    second: ShooterIdle_17
+  - first:
+      213: -5791044007279915463
+    second: ShooterIdle_18
+  - first:
+      213: 3214685849982296462
+    second: ShooterIdle_19
+  - first:
+      213: 8859860461937115908
+    second: ShooterIdle_20
+  - first:
+      213: 4255780846794142192
+    second: ShooterIdle_21
+  - first:
+      213: -5348582147389921832
+    second: ShooterIdle_22
+  - first:
+      213: 5425598738822887295
+    second: ShooterIdle_23
+  - first:
+      213: 8548460660077629134
+    second: ShooterIdle_24
+  - first:
+      213: 4585815746762420876
+    second: ShooterIdle_25
+  - first:
+      213: -5277553283519656177
+    second: ShooterIdle_26
+  - first:
+      213: 8081537706850169500
+    second: ShooterIdle_27
+  - first:
+      213: 1522751820442089433
+    second: ShooterIdle_28
+  - first:
+      213: 1232517214101566675
+    second: ShooterIdle_29
+  - first:
+      213: 773703153385402279
+    second: ShooterIdle_30
+  - first:
+      213: 7253557774733081119
+    second: ShooterIdle_31
+  - first:
+      213: 1010165605800070768
+    second: ShooterIdle_32
+  - first:
+      213: 1604558677033061645
+    second: ShooterIdle_33
+  - first:
+      213: 6066635349859877876
+    second: ShooterIdle_34
+  - first:
+      213: 8990141923214288666
+    second: ShooterIdle_35
+  - first:
+      213: 7538452934454055077
+    second: ShooterIdle_36
+  - first:
+      213: 6100710107259818408
+    second: ShooterIdle_37
+  - first:
+      213: -6093343201448627896
+    second: ShooterIdle_38
+  - first:
+      213: -8335705276673015741
+    second: ShooterIdle_39
+  - first:
+      213: -3286184222123974615
+    second: ShooterIdle_40
+  - first:
+      213: -8739016327713383336
+    second: ShooterIdle_41
+  - first:
+      213: 3344797449428498817
+    second: ShooterIdle_42
+  - first:
+      213: 4586450188135521432
+    second: ShooterIdle_43
+  - first:
+      213: -4511054518225292299
+    second: ShooterIdle_44
+  - first:
+      213: -1793790750893398608
+    second: ShooterIdle_45
+  - first:
+      213: 4081909523687503549
+    second: ShooterIdle_46
+  - first:
+      213: -1732572382538111976
+    second: ShooterIdle_47
+  - first:
+      213: -9056512050219362785
+    second: ShooterIdle_48
+  - first:
+      213: -6953899996342502650
+    second: ShooterIdle_49
+  - first:
+      213: -6038475953263341099
+    second: ShooterIdle_50
+  - first:
+      213: 2507478034222360185
+    second: ShooterIdle_51
+  - first:
+      213: -2687892654088727829
+    second: ShooterIdle_52
+  - first:
+      213: -7205426446920499417
+    second: ShooterIdle_53
+  - first:
+      213: 3415311933331384023
+    second: ShooterIdle_54
+  - first:
+      213: -4918861166257903836
+    second: ShooterIdle_55
+  - first:
+      213: 4579327873932448810
+    second: ShooterIdle_56
+  - first:
+      213: -5396462240647144830
+    second: ShooterIdle_57
+  - first:
+      213: -3743928834832512696
+    second: ShooterIdle_58
+  - first:
+      213: -3112770089658353706
+    second: ShooterIdle_59
+  - first:
+      213: 5371109306060434331
+    second: ShooterIdle_60
+  - first:
+      213: -884740788057018450
+    second: ShooterIdle_61
+  - first:
+      213: 2054497460951370394
+    second: ShooterIdle_62
+  - first:
+      213: 10396603990452580
+    second: ShooterIdle_63
+  - first:
+      213: -3087714679522225958
+    second: ShooterIdle_64
+  - first:
+      213: -3394497603474328798
+    second: ShooterIdle_65
+  - first:
+      213: 5732557892216312912
+    second: ShooterIdle_66
+  - first:
+      213: -2329382147928567053
+    second: ShooterIdle_67
+  - first:
+      213: -6353999572071629644
+    second: ShooterIdle_68
+  - first:
+      213: -7142075916165637182
+    second: ShooterIdle_69
+  - first:
+      213: 618336561645119623
+    second: ShooterIdle_70
+  - first:
+      213: 7219324542080526759
+    second: ShooterIdle_71
+  - first:
+      213: -3466388688942197391
+    second: ShooterIdle_72
+  - first:
+      213: -7260852505434458685
+    second: ShooterIdle_73
+  - first:
+      213: -5771795621244569988
+    second: ShooterIdle_74
+  - first:
+      213: -8804945857409691901
+    second: ShooterIdle_75
+  - first:
+      213: 8308755430675709070
+    second: ShooterIdle_76
+  - first:
+      213: 2115673954034839833
+    second: ShooterIdle_77
+  - first:
+      213: 1714133260018619324
+    second: ShooterIdle_78
+  - first:
+      213: 1612612874969989831
+    second: ShooterIdle_79
+  - first:
+      213: -7172357356844195688
+    second: ShooterIdle_80
+  - first:
+      213: -2516220663662163945
+    second: ShooterIdle_81
+  - first:
+      213: -5633627741177281579
+    second: ShooterIdle_82
+  - first:
+      213: 8327291936713791721
+    second: ShooterIdle_83
+  - first:
+      213: 264399586427409703
+    second: ShooterIdle_84
+  - first:
+      213: -2153700426914986813
+    second: ShooterIdle_85
+  - first:
+      213: 5702029040435766607
+    second: ShooterIdle_86
+  - first:
+      213: 4676669504366449657
+    second: ShooterIdle_87
+  - first:
+      213: 7067982005846881738
+    second: ShooterIdle_88
+  - first:
+      213: -7383248930566939225
+    second: ShooterIdle_89
+  - first:
+      213: 1753136546316260986
+    second: ShooterIdle_90
+  - first:
+      213: 558444015398783735
+    second: ShooterIdle_91
+  - first:
+      213: -1849309503089667675
+    second: ShooterIdle_92
+  - first:
+      213: 8282176671369179227
+    second: ShooterIdle_93
+  - first:
+      213: -2440203442432195776
+    second: ShooterIdle_94
+  - first:
+      213: -9121107218780440520
+    second: ShooterIdle_95
+  - first:
+      213: -3212379002490689290
+    second: ShooterIdle_96
+  - first:
+      213: -89037562078170225
+    second: ShooterIdle_97
+  - first:
+      213: 3221161332075766843
+    second: ShooterIdle_98
+  - first:
+      213: 1319263950127397863
+    second: ShooterIdle_99
+  - first:
+      213: 3841216300953936440
+    second: ShooterIdle_100
+  - first:
+      213: -2897554237356189457
+    second: ShooterIdle_101
+  - first:
+      213: -7235934601670105041
+    second: ShooterIdle_102
+  - first:
+      213: 6858480093676263702
+    second: ShooterIdle_103
+  - first:
+      213: -2036745430169520975
+    second: ShooterIdle_104
+  - first:
+      213: -3896402442378364250
+    second: ShooterIdle_105
+  - first:
+      213: -183996779833139109
+    second: ShooterIdle_106
+  - first:
+      213: -8484623671961859215
+    second: ShooterIdle_107
+  - first:
+      213: -3502312424518567191
+    second: ShooterIdle_108
+  - first:
+      213: 2509485057233147495
+    second: ShooterIdle_109
+  - first:
+      213: -1741931401490364634
+    second: ShooterIdle_110
+  - first:
+      213: 1891392240114092894
+    second: ShooterIdle_111
+  - first:
+      213: -3893680617847543533
+    second: ShooterIdle_112
+  - first:
+      213: 6454612816711842509
+    second: ShooterIdle_113
+  - first:
+      213: -8451318135265223163
+    second: ShooterIdle_114
+  - first:
+      213: -5390625415444338494
+    second: ShooterIdle_115
+  - first:
+      213: 6796445189286523503
+    second: ShooterIdle_116
+  - first:
+      213: -7653596966239201917
+    second: ShooterIdle_117
+  - first:
+      213: 7687511969163015187
+    second: ShooterIdle_118
+  - first:
+      213: 235576044187227099
+    second: ShooterIdle_119
+  - first:
+      213: -3854004643306708147
+    second: ShooterIdle_120
+  - first:
+      213: 2197129810490485899
+    second: ShooterIdle_121
+  - first:
+      213: 3715274929867929749
+    second: ShooterIdle_122
+  - first:
+      213: 4545969254949203160
+    second: ShooterIdle_123
+  - first:
+      213: 6790147423292942283
+    second: ShooterIdle_124
+  - first:
+      213: -925043707728407835
+    second: ShooterIdle_125
+  - first:
+      213: 3141538803851789543
+    second: ShooterIdle_126
+  - first:
+      213: -5711755661999544860
+    second: ShooterIdle_127
+  - first:
+      213: 4233542763839192365
+    second: ShooterIdle_128
+  - first:
+      213: -153450707797544722
+    second: ShooterIdle_129
+  - first:
+      213: 414288352910785475
+    second: ShooterIdle_130
+  - first:
+      213: 5641907775980741261
+    second: ShooterIdle_131
+  - first:
+      213: 7706743164837288788
+    second: ShooterIdle_132
+  - first:
+      213: -7479339766357202482
+    second: ShooterIdle_133
+  - first:
+      213: 3899764835922237790
+    second: ShooterIdle_134
+  - first:
+      213: 7939351266416499167
+    second: ShooterIdle_135
+  - first:
+      213: 1000097133603038689
+    second: ShooterIdle_136
+  - first:
+      213: 2504583184186421933
+    second: ShooterIdle_137
+  - first:
+      213: 2695143606219452099
+    second: ShooterIdle_138
+  - first:
+      213: -5052185777557611861
+    second: ShooterIdle_139
+  - first:
+      213: 7616591976808774473
+    second: ShooterIdle_140
+  - first:
+      213: 654133621152482437
+    second: ShooterIdle_141
+  - first:
+      213: -6502144054377854154
+    second: ShooterIdle_142
+  - first:
+      213: -3747530245435993867
+    second: ShooterIdle_143
+  - first:
+      213: 58563447570896006
+    second: ShooterIdle_144
+  - first:
+      213: 8342031427857468181
+    second: ShooterIdle_145
+  - first:
+      213: -8495581377177496207
+    second: ShooterIdle_146
+  - first:
+      213: -9184434338579480915
+    second: ShooterIdle_147
+  - first:
+      213: 1778350618896124941
+    second: ShooterIdle_148
+  - first:
+      213: -1301331170829524297
+    second: ShooterIdle_149
+  - first:
+      213: 6637828685411085698
+    second: ShooterIdle_150
+  - first:
+      213: 667102445982897549
+    second: ShooterIdle_151
+  - first:
+      213: -4838056408374831552
+    second: ShooterIdle_152
+  - first:
+      213: -273435596121810955
+    second: ShooterIdle_153
+  - first:
+      213: -7852176598961105861
+    second: ShooterIdle_154
+  - first:
+      213: 7047866064289098565
+    second: ShooterIdle_155
+  - first:
+      213: -2187250688641667560
+    second: ShooterIdle_156
+  - first:
+      213: -489407621686837724
+    second: ShooterIdle_157
+  - first:
+      213: -5298706328943992117
+    second: ShooterIdle_158
+  - first:
+      213: 6531232419178708684
+    second: ShooterIdle_159
+  - first:
+      213: -8829137789829822964
+    second: ShooterIdle_160
+  - first:
+      213: 3065559448987700620
+    second: ShooterIdle_161
+  - first:
+      213: 2100173105889023230
+    second: ShooterIdle_162
+  - first:
+      213: 910951373852136967
+    second: ShooterIdle_163
+  - first:
+      213: -9105188544793089769
+    second: ShooterIdle_164
+  - first:
+      213: -1273772261670186674
+    second: ShooterIdle_165
+  - first:
+      213: 4029963546329559275
+    second: ShooterIdle_166
+  - first:
+      213: 4376774656488481139
+    second: ShooterIdle_167
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -140,7 +605,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 256
+        y: 2560
         width: 256
         height: 256
       alignment: 0
@@ -162,7 +627,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 256
+        y: 2560
         width: 256
         height: 256
       alignment: 0
@@ -184,7 +649,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 256
+        y: 2560
         width: 256
         height: 256
       alignment: 0
@@ -206,7 +671,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 256
+        y: 2560
         width: 256
         height: 256
       alignment: 0
@@ -228,7 +693,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1024
-        y: 256
+        y: 2560
         width: 256
         height: 256
       alignment: 0
@@ -250,7 +715,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1280
-        y: 256
+        y: 2560
         width: 256
         height: 256
       alignment: 0
@@ -272,7 +737,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1536
-        y: 256
+        y: 2560
         width: 256
         height: 256
       alignment: 0
@@ -294,7 +759,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1792
-        y: 256
+        y: 2560
         width: 256
         height: 256
       alignment: 0
@@ -315,8 +780,8 @@ TextureImporter:
       name: ShooterIdle_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2048
+        y: 2560
         width: 256
         height: 256
       alignment: 0
@@ -337,8 +802,8 @@ TextureImporter:
       name: ShooterIdle_9
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
+        x: 2304
+        y: 2560
         width: 256
         height: 256
       alignment: 0
@@ -359,8 +824,8 @@ TextureImporter:
       name: ShooterIdle_10
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
+        x: 2560
+        y: 2560
         width: 256
         height: 256
       alignment: 0
@@ -381,8 +846,8 @@ TextureImporter:
       name: ShooterIdle_11
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
+        x: 2816
+        y: 2560
         width: 256
         height: 256
       alignment: 0
@@ -403,8 +868,8 @@ TextureImporter:
       name: ShooterIdle_12
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 0
+        x: 3072
+        y: 2560
         width: 256
         height: 256
       alignment: 0
@@ -421,11 +886,3421 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_13
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ba71eac044df06a0800000000000000
+      internalID: -6480727964016084301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_14
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a4f898321555f610800000000000000
+      internalID: 1654321974875845793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_15
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c6a586bb85ddd510800000000000000
+      internalID: 1575650240688924359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9080c9ad52442ed0800000000000000
+      internalID: -2439752128080609124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1234e4a5dc793bc0800000000000000
+      internalID: -3802871153301376483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e0d6b582412afa0800000000000000
+      internalID: -5791044007279915463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e816ba89fbbdc9c20800000000000000
+      internalID: 3214685849982296462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_20
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4034a49062c84fa70800000000000000
+      internalID: 8859860461937115908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_21
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f1731fc1229f0b30800000000000000
+      internalID: 4255780846794142192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d5e3dcffd406c5b0800000000000000
+      internalID: -5348582147389921832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_23
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7778519e499b4b40800000000000000
+      internalID: 5425598738822887295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_24
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece045cbdab32a670800000000000000
+      internalID: 8548460660077629134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_25
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82ba2fff1714af30800000000000000
+      internalID: 4585815746762420876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_26
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f4d94104d52c6b0800000000000000
+      internalID: -5277553283519656177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_27
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92babff9b3672070800000000000000
+      internalID: 8081537706850169500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_28
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7b78a76b6e12510800000000000000
+      internalID: 1522751820442089433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_29
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4f31640e7ca1110800000000000000
+      internalID: 1232517214101566675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_30
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7afe2233beebcba00800000000000000
+      internalID: 773703153385402279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_31
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1afcb87d50d9a460800000000000000
+      internalID: 7253557774733081119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ec7023444d40e00800000000000000
+      internalID: 1010165605800070768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0d83dd8d99844610800000000000000
+      internalID: 1604558677033061645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_34
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3c93255b4013450800000000000000
+      internalID: 6066635349859877876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_35
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17e885827663cc70800000000000000
+      internalID: 8990141923214288666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_36
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a09222e007fd9860800000000000000
+      internalID: 7538452934454055077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_37
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a15bd405831aa450800000000000000
+      internalID: 6100710107259818408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_38
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 841fc1764a8107ba0800000000000000
+      internalID: -6093343201448627896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_39
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3404e8f1730a15c80800000000000000
+      internalID: -8335705276673015741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_40
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 920aec56cd02562d0800000000000000
+      internalID: -3286184222123974615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_41
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c1e4483f6c8b680800000000000000
+      internalID: -8739016327713383336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_42
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18971da0f8b1b6e20800000000000000
+      internalID: 3344797449428498817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_43
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89c57d3652856af30800000000000000
+      internalID: 4586450188135521432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_44
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f3b2c6f0d38561c0800000000000000
+      internalID: -4511054518225292299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_45
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b52e93e0dc2b17e0800000000000000
+      internalID: -1793790750893398608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_46
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db67dacb51bd5a830800000000000000
+      internalID: 4081909523687503549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_47
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814e92ff89aa4f7e0800000000000000
+      internalID: -1732572382538111976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1651a6164ec05280800000000000000
+      internalID: -9056512050219362785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_49
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60b3a62fbc8ce7f90800000000000000
+      internalID: -6953899996342502650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_50
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d1100d1d16033ca0800000000000000
+      internalID: -6038475953263341099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_51
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9762be7acf95cc220800000000000000
+      internalID: 2507478034222360185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_52
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be2d8a64fdfa2bad0800000000000000
+      internalID: -2687892654088727829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_53
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f391092de210c90800000000000000
+      internalID: -7205426446920499417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_54
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6ae57bb10a56f20800000000000000
+      internalID: 3415311933331384023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_55
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 427ebbd94d1bcbbb0800000000000000
+      internalID: -4918861166257903836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_56
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a24d9c3607a0d8f30800000000000000
+      internalID: 4579327873932448810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_57
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a1b6e0f2aeb15b0800000000000000
+      internalID: -5396462240647144830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_58
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84947779f84ea0cc0800000000000000
+      internalID: -3743928834832512696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_59
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d7f37a78183dc4d0800000000000000
+      internalID: -3112770089658353706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_60
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9be68dd4730a8a40800000000000000
+      internalID: 5371109306060434331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_61
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eafef89d0f4c8b3f0800000000000000
+      internalID: -884740788057018450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_62
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ac2f73e8a038c10800000000000000
+      internalID: 2054497460951370394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_63
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469a8bff7afe42000800000000000000
+      internalID: 10396603990452580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad0915fbbdb3625d0800000000000000
+      internalID: -3087714679522225958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_65
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2237ff91a6254e0d0800000000000000
+      internalID: -3394497603474328798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_66
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0545ae3d7032e8f40800000000000000
+      internalID: 5732557892216312912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_67
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f2d49e274f5cafd0800000000000000
+      internalID: -2329382147928567053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_68
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bcbfabdd0f02d7a0800000000000000
+      internalID: -6353999572071629644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_69
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb131a6bcf32ec90800000000000000
+      internalID: -7142075916165637182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_70
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7886e74a3d5c49800800000000000000
+      internalID: 618336561645119623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_71
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a928f0eb61303460800000000000000
+      internalID: 7219324542080526759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_72
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1751b266ad9e4efc0800000000000000
+      internalID: -3466388688942197391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_73
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c5f21fad154c3b90800000000000000
+      internalID: -7260852505434458685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_74
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c76ff87767676efa0800000000000000
+      internalID: -5771795621244569988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_75
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f4c8ea46c8ec580800000000000000
+      internalID: -8804945857409691901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_76
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8cf503ea01ae4370800000000000000
+      internalID: 8308755430675709070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_77
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911faca70426c5d10800000000000000
+      internalID: 2115673954034839833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_78
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb3971d3e13d9c710800000000000000
+      internalID: 1714133260018619324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_79
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c2cec4add6216610800000000000000
+      internalID: 1612612874969989831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89064271cfaa67c90800000000000000
+      internalID: -7172357356844195688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_81
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7184bed43a6941dd0800000000000000
+      internalID: -2516220663662163945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_82
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d3875aea6551d1b0800000000000000
+      internalID: -5633627741177281579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_83
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e8dcc485eb709370800000000000000
+      internalID: 8327291936713791721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_84
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72514c3e5065ba300800000000000000
+      internalID: 264399586427409703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_85
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c4002d5fd48c12e0800000000000000
+      internalID: -2153700426914986813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_86
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f45a22e933da12f40800000000000000
+      internalID: 5702029040435766607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_87
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f31aabd22ed6e040800000000000000
+      internalID: 4676669504366449657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_88
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac53b51cf24861260800000000000000
+      internalID: 7067982005846881738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_89
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad564d373e698990800000000000000
+      internalID: -7383248930566939225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_90
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a769fed7664645810800000000000000
+      internalID: 1753136546316260986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_91
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa89cc8fddffb700800000000000000
+      internalID: 558444015398783735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_92
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a116941ecee556e0800000000000000
+      internalID: -1849309503089667675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_93
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b50bcff3dc330f270800000000000000
+      internalID: 8282176671369179227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_94
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043c42ad5e7a22ed0800000000000000
+      internalID: -2440203442432195776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_95
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 838375a6f415b6180800000000000000
+      internalID: -9121107218780440520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f86e9031565b63d0800000000000000
+      internalID: -3212379002490689290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_97
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f83f9ac1fcca3cef0800000000000000
+      internalID: -89037562078170225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_98
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b34a9924a2dd3bc20800000000000000
+      internalID: 3221161332075766843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_99
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb7258a297fe4210800000000000000
+      internalID: 1319263950127397863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_100
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 832acc3cfddbe4530800000000000000
+      internalID: 3841216300953936440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_101
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8d4f4e5c1d9c7d0800000000000000
+      internalID: -2897554237356189457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_102
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28ee7141dbc49b90800000000000000
+      internalID: -7235934601670105041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_103
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61959a2be473e2f50800000000000000
+      internalID: 6858480093676263702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_104
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b478d882d60cb3e0800000000000000
+      internalID: -2036745430169520975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_105
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aab2186f923de9c0800000000000000
+      internalID: -3896402442378364250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_106
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b50ea3257ef427df0800000000000000
+      internalID: -183996779833139109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_107
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17bc7db49bf804a80800000000000000
+      internalID: -8484623671961859215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_108
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea322ce769456fc0800000000000000
+      internalID: -3502312424518567191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_109
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 766588d1d5b73d220800000000000000
+      internalID: 2509485057233147495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_110
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62781179e9a63d7e0800000000000000
+      internalID: -1741931401490364634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_111
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b4eeaa8339f3a10800000000000000
+      internalID: 1891392240114092894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 319af509b1ed6f9c0800000000000000
+      internalID: -3893680617847543533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_113
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcafac6a824639950800000000000000
+      internalID: 6454612816711842509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_114
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e13b7dee2e6ba80800000000000000
+      internalID: -8451318135265223163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_115
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c86f33deb6a035b0800000000000000
+      internalID: -5390625415444338494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_116
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f62f5daf3e2d15e50800000000000000
+      internalID: 6796445189286523503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_117
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3851e451c16f8c590800000000000000
+      internalID: -7653596966239201917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_118
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3147680e7678faa60800000000000000
+      internalID: 7687511969163015187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_119
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd31f5ff92fe44300800000000000000
+      internalID: 235576044187227099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_120
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d436ff04233d38ac0800000000000000
+      internalID: -3854004643306708147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_121
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ce4b7fbe5cd7e10800000000000000
+      internalID: 2197129810490485899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_122
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59831b54dde4f8330800000000000000
+      internalID: 3715274929867929749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_123
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc2819a3f6861f30800000000000000
+      internalID: 4545969254949203160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_124
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc7e8e11b137b3e50800000000000000
+      internalID: 6790147423292942283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_125
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e2532f16a59923f0800000000000000
+      internalID: -925043707728407835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_126
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e401b3c5ecf89b20800000000000000
+      internalID: 3141538803851789543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_127
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5e0b2dc74cbb0b0800000000000000
+      internalID: -5711755661999544860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2d7f04a6b090ca30800000000000000
+      internalID: 4233542763839192365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_129
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0f13fe465deddf0800000000000000
+      internalID: -153450707797544722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_130
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb34dddf09dfb500800000000000000
+      internalID: 414288352910785475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_131
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82a8daea351c4e40800000000000000
+      internalID: 5641907775980741261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_132
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45bdb4b831ad3fa60800000000000000
+      internalID: 7706743164837288788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_133
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec963d71c1c043890800000000000000
+      internalID: -7479339766357202482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_134
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5954b8d47fbe1630800000000000000
+      internalID: 3899764835922237790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_135
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd99dcd89ed3e2e60800000000000000
+      internalID: 7939351266416499167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_136
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e5ab455b0f01ed00800000000000000
+      internalID: 1000097133603038689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_137
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da239dbd22112c220800000000000000
+      internalID: 2504583184186421933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_138
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce206394d2176520800000000000000
+      internalID: 2695143606219452099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_139
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baad56d8dc703e9b0800000000000000
+      internalID: -5052185777557611861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_140
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94bf6c86c0293b960800000000000000
+      internalID: 7616591976808774473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_141
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5840f6c0013f31900800000000000000
+      internalID: 654133621152482437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_142
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63bc360be6eb3c5a0800000000000000
+      internalID: -6502144054377854154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_143
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f051c7d8191efbc0800000000000000
+      internalID: -3747530245435993867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6841941352f00d000800000000000000
+      internalID: 58563447570896006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_145
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51bc69ab269d4c370800000000000000
+      internalID: 8342031427857468181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_146
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17559ecbfb1a91a80800000000000000
+      internalID: -8495581377177496207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_147
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daef11a51a55a8080800000000000000
+      internalID: -9184434338579480915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_148
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c466d3778fda810800000000000000
+      internalID: 1778350618896124941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_149
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b22093e13eb0fde0800000000000000
+      internalID: -1301331170829524297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_150
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d63d9450e4e1c50800000000000000
+      internalID: 6637828685411085698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_151
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d85da91e326024900800000000000000
+      internalID: 667102445982897549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_152
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04614876455cbdcb0800000000000000
+      internalID: -4838056408374831552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_153
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f7563826cf843cf0800000000000000
+      internalID: -273435596121810955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_154
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b34d9416cf6770390800000000000000
+      internalID: -7852176598961105861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_155
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b6b7228dc0fc160800000000000000
+      internalID: 7047866064289098565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_156
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ee8c4561355a1e0800000000000000
+      internalID: -2187250688641667560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_157
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ebcfe6c564539f0800000000000000
+      internalID: -489407621686837724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_158
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc2ed26eaa63776b0800000000000000
+      internalID: -5298706328943992117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_159
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce79a2084993aa50800000000000000
+      internalID: 6531232419178708684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c06473c75f9987580800000000000000
+      internalID: -8829137789829822964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_161
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d01caa31e0b8a20800000000000000
+      internalID: 3065559448987700620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_162
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef418570050552d10800000000000000
+      internalID: 2100173105889023230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_163
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7065c16b27954ac00800000000000000
+      internalID: 910951373852136967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_164
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 719e6a6824fd3a180800000000000000
+      internalID: -9105188544793089769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_165
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41176270e6a25ee0800000000000000
+      internalID: -1273772261670186674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_166
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be03fb46e7e4de730800000000000000
+      internalID: 4029963546329559275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShooterIdle_167
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371ade56c5d6dbc30800000000000000
+      internalID: 4376774656488481139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0d4720ea5c2a6d443a764004e6e7081d
+    spriteID: 8138a4d5894a7654fa81e87afa0d3231
     internalID: 0
     vertices: []
     indices: 
@@ -435,21 +4310,176 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":2.0},"gridSpriteSize":{"x":256.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":3.0},"gridSpriteSize":{"x":256.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       ShooterIdle_0: 1845588143181486290
       ShooterIdle_1: 8072540802429395885
       ShooterIdle_10: 5439908678729512045
+      ShooterIdle_100: 3841216300953936440
+      ShooterIdle_101: -2897554237356189457
+      ShooterIdle_102: -7235934601670105041
+      ShooterIdle_103: 6858480093676263702
+      ShooterIdle_104: -2036745430169520975
+      ShooterIdle_105: -3896402442378364250
+      ShooterIdle_106: -183996779833139109
+      ShooterIdle_107: -8484623671961859215
+      ShooterIdle_108: -3502312424518567191
+      ShooterIdle_109: 2509485057233147495
       ShooterIdle_11: -2216964530125906354
+      ShooterIdle_110: -1741931401490364634
+      ShooterIdle_111: 1891392240114092894
+      ShooterIdle_112: -3893680617847543533
+      ShooterIdle_113: 6454612816711842509
+      ShooterIdle_114: -8451318135265223163
+      ShooterIdle_115: -5390625415444338494
+      ShooterIdle_116: 6796445189286523503
+      ShooterIdle_117: -7653596966239201917
+      ShooterIdle_118: 7687511969163015187
+      ShooterIdle_119: 235576044187227099
       ShooterIdle_12: -7280242133066608597
+      ShooterIdle_120: -3854004643306708147
+      ShooterIdle_121: 2197129810490485899
+      ShooterIdle_122: 3715274929867929749
+      ShooterIdle_123: 4545969254949203160
+      ShooterIdle_124: 6790147423292942283
+      ShooterIdle_125: -925043707728407835
+      ShooterIdle_126: 3141538803851789543
+      ShooterIdle_127: -5711755661999544860
+      ShooterIdle_128: 4233542763839192365
+      ShooterIdle_129: -153450707797544722
+      ShooterIdle_13: -6480727964016084301
+      ShooterIdle_130: 414288352910785475
+      ShooterIdle_131: 5641907775980741261
+      ShooterIdle_132: 7706743164837288788
+      ShooterIdle_133: -7479339766357202482
+      ShooterIdle_134: 3899764835922237790
+      ShooterIdle_135: 7939351266416499167
+      ShooterIdle_136: 1000097133603038689
+      ShooterIdle_137: 2504583184186421933
+      ShooterIdle_138: 2695143606219452099
+      ShooterIdle_139: -5052185777557611861
+      ShooterIdle_14: 1654321974875845793
+      ShooterIdle_140: 7616591976808774473
+      ShooterIdle_141: 654133621152482437
+      ShooterIdle_142: -6502144054377854154
+      ShooterIdle_143: -3747530245435993867
+      ShooterIdle_144: 58563447570896006
+      ShooterIdle_145: 8342031427857468181
+      ShooterIdle_146: -8495581377177496207
+      ShooterIdle_147: -9184434338579480915
+      ShooterIdle_148: 1778350618896124941
+      ShooterIdle_149: -1301331170829524297
+      ShooterIdle_15: 1575650240688924359
+      ShooterIdle_150: 6637828685411085698
+      ShooterIdle_151: 667102445982897549
+      ShooterIdle_152: -4838056408374831552
+      ShooterIdle_153: -273435596121810955
+      ShooterIdle_154: -7852176598961105861
+      ShooterIdle_155: 7047866064289098565
+      ShooterIdle_156: -2187250688641667560
+      ShooterIdle_157: -489407621686837724
+      ShooterIdle_158: -5298706328943992117
+      ShooterIdle_159: 6531232419178708684
+      ShooterIdle_16: -2439752128080609124
+      ShooterIdle_160: -8829137789829822964
+      ShooterIdle_161: 3065559448987700620
+      ShooterIdle_162: 2100173105889023230
+      ShooterIdle_163: 910951373852136967
+      ShooterIdle_164: -9105188544793089769
+      ShooterIdle_165: -1273772261670186674
+      ShooterIdle_166: 4029963546329559275
+      ShooterIdle_167: 4376774656488481139
+      ShooterIdle_17: -3802871153301376483
+      ShooterIdle_18: -5791044007279915463
+      ShooterIdle_19: 3214685849982296462
       ShooterIdle_2: 3001660779855711354
+      ShooterIdle_20: 8859860461937115908
+      ShooterIdle_21: 4255780846794142192
+      ShooterIdle_22: -5348582147389921832
+      ShooterIdle_23: 5425598738822887295
+      ShooterIdle_24: 8548460660077629134
+      ShooterIdle_25: 4585815746762420876
+      ShooterIdle_26: -5277553283519656177
+      ShooterIdle_27: 8081537706850169500
+      ShooterIdle_28: 1522751820442089433
+      ShooterIdle_29: 1232517214101566675
       ShooterIdle_3: 7965671865333109408
+      ShooterIdle_30: 773703153385402279
+      ShooterIdle_31: 7253557774733081119
+      ShooterIdle_32: 1010165605800070768
+      ShooterIdle_33: 1604558677033061645
+      ShooterIdle_34: 6066635349859877876
+      ShooterIdle_35: 8990141923214288666
+      ShooterIdle_36: 7538452934454055077
+      ShooterIdle_37: 6100710107259818408
+      ShooterIdle_38: -6093343201448627896
+      ShooterIdle_39: -8335705276673015741
       ShooterIdle_4: 6094996675868325336
+      ShooterIdle_40: -3286184222123974615
+      ShooterIdle_41: -8739016327713383336
+      ShooterIdle_42: 3344797449428498817
+      ShooterIdle_43: 4586450188135521432
+      ShooterIdle_44: -4511054518225292299
+      ShooterIdle_45: -1793790750893398608
+      ShooterIdle_46: 4081909523687503549
+      ShooterIdle_47: -1732572382538111976
+      ShooterIdle_48: -9056512050219362785
+      ShooterIdle_49: -6953899996342502650
       ShooterIdle_5: 4298351272497403408
+      ShooterIdle_50: -6038475953263341099
+      ShooterIdle_51: 2507478034222360185
+      ShooterIdle_52: -2687892654088727829
+      ShooterIdle_53: -7205426446920499417
+      ShooterIdle_54: 3415311933331384023
+      ShooterIdle_55: -4918861166257903836
+      ShooterIdle_56: 4579327873932448810
+      ShooterIdle_57: -5396462240647144830
+      ShooterIdle_58: -3743928834832512696
+      ShooterIdle_59: -3112770089658353706
       ShooterIdle_6: -7903486715831802521
+      ShooterIdle_60: 5371109306060434331
+      ShooterIdle_61: -884740788057018450
+      ShooterIdle_62: 2054497460951370394
+      ShooterIdle_63: 10396603990452580
+      ShooterIdle_64: -3087714679522225958
+      ShooterIdle_65: -3394497603474328798
+      ShooterIdle_66: 5732557892216312912
+      ShooterIdle_67: -2329382147928567053
+      ShooterIdle_68: -6353999572071629644
+      ShooterIdle_69: -7142075916165637182
       ShooterIdle_7: 1406820800298146717
+      ShooterIdle_70: 618336561645119623
+      ShooterIdle_71: 7219324542080526759
+      ShooterIdle_72: -3466388688942197391
+      ShooterIdle_73: -7260852505434458685
+      ShooterIdle_74: -5771795621244569988
+      ShooterIdle_75: -8804945857409691901
+      ShooterIdle_76: 8308755430675709070
+      ShooterIdle_77: 2115673954034839833
+      ShooterIdle_78: 1714133260018619324
+      ShooterIdle_79: 1612612874969989831
       ShooterIdle_8: 3018740735951456716
+      ShooterIdle_80: -7172357356844195688
+      ShooterIdle_81: -2516220663662163945
+      ShooterIdle_82: -5633627741177281579
+      ShooterIdle_83: 8327291936713791721
+      ShooterIdle_84: 264399586427409703
+      ShooterIdle_85: -2153700426914986813
+      ShooterIdle_86: 5702029040435766607
+      ShooterIdle_87: 4676669504366449657
+      ShooterIdle_88: 7067982005846881738
+      ShooterIdle_89: -7383248930566939225
       ShooterIdle_9: -6536223064375555386
+      ShooterIdle_90: 1753136546316260986
+      ShooterIdle_91: 558444015398783735
+      ShooterIdle_92: -1849309503089667675
+      ShooterIdle_93: 8282176671369179227
+      ShooterIdle_94: -2440203442432195776
+      ShooterIdle_95: -9121107218780440520
+      ShooterIdle_96: -3212379002490689290
+      ShooterIdle_97: -89037562078170225
+      ShooterIdle_98: 3221161332075766843
+      ShooterIdle_99: 1319263950127397863
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

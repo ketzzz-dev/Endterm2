@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: DistanceBehaviour
   m_EditorClassIdentifier: Assembly-CSharp::DistanceBehaviour
   priority: 2
-  radius: 3.5
+  distance: 3

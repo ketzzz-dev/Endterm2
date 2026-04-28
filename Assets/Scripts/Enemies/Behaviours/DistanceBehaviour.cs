@@ -4,13 +4,16 @@ using UnityEngine;
 public class DistanceBehaviour : EnemyBehaviour
 {
     [SerializeField] private float priority = 1f;
-    [SerializeField] private float radius = 1f;
+    [SerializeField] private float distance = 1f;
 
     public override bool CanExecute(EnemyContext context) => !context.isActionLocked;
-    public override float GetPriority(EnemyContext context) => context.distanceToPlayer < radius ? priority : 0f;
+    public override float GetPriority(EnemyContext context) => context.distanceToPlayer < distance ? priority : 0f;
 
     public override void Execute(EnemyContext context)
     {
-        context.desiredDirection = -context.directionToPlayer;
+        if (context.distanceToPlayer > distance)
+            return;
+
+        context.desiredDirection -= 2f * context.directionToPlayer;
     }
 }

@@ -1,46 +1,88 @@
 fileFormatVersion: 2
-guid: 0814d40bd5226e84185793ea7e6624f5
+guid: a09eb18ed9af86f4ca60272ebecdfeef
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9021338388912748733
-    second: ShooterAttack_0
+      213: -1760841980950150560
+    second: ChargerDeath_0
   - first:
-      213: 2382674416691580853
-    second: ShooterAttack_1
+      213: -3488969277817682090
+    second: ChargerDeath_1
   - first:
-      213: -71833411623906046
-    second: ShooterAttack_2
+      213: 982731148678532461
+    second: ChargerDeath_2
   - first:
-      213: -347483348236933404
-    second: ShooterAttack_3
+      213: -1790776543800762455
+    second: ChargerDeath_3
   - first:
-      213: 7351454135303816433
-    second: ShooterAttack_4
+      213: -8016372772393275611
+    second: ChargerDeath_4
   - first:
-      213: -4138049714213804283
-    second: ShooterAttack_5
+      213: 1049156233755416421
+    second: ChargerDeath_5
   - first:
-      213: 8452378017342108276
-    second: ShooterAttack_6
+      213: -5069169376937094847
+    second: ChargerDeath_6
   - first:
-      213: -6274725478169504445
-    second: ShooterAttack_7
+      213: -7849891593200363415
+    second: ChargerDeath_7
   - first:
-      213: -5407747188372226289
-    second: ShooterAttack_8
+      213: -3873093062523929913
+    second: ChargerDeath_8
   - first:
-      213: -6585184859777248465
-    second: ShooterAttack_9
+      213: -2512168395698790861
+    second: ChargerDeath_9
   - first:
-      213: -8729556130695141904
-    second: ShooterAttack_10
+      213: 4705630901462579227
+    second: ChargerDeath_10
   - first:
-      213: 6662323561843907035
-    second: ShooterAttack_11
+      213: 7401652492906362596
+    second: ChargerDeath_11
   - first:
-      213: -7886624504526706916
-    second: ShooterAttack_12
+      213: -457717993649415951
+    second: ChargerDeath_12
+  - first:
+      213: -4714752722844156185
+    second: ChargerDeath_13
+  - first:
+      213: -9069184434339137751
+    second: ChargerDeath_14
+  - first:
+      213: -2043958462004669232
+    second: ChargerDeath_15
+  - first:
+      213: -6701396680777769801
+    second: ChargerDeath_16
+  - first:
+      213: -3134014319028234583
+    second: ChargerDeath_17
+  - first:
+      213: 6656738357374203844
+    second: ChargerDeath_18
+  - first:
+      213: 1113897525724119580
+    second: ChargerDeath_19
+  - first:
+      213: -1847698558408162202
+    second: ChargerDeath_20
+  - first:
+      213: 3275089738211465794
+    second: ChargerDeath_21
+  - first:
+      213: -1051601805269425451
+    second: ChargerDeath_22
+  - first:
+      213: -2192668480260994633
+    second: ChargerDeath_23
+  - first:
+      213: 2940059804130798877
+    second: ChargerDeath_24
+  - first:
+      213: -4117223951426689409
+    second: ChargerDeath_25
+  - first:
+      213: -2459440338395392187
+    second: ChargerDeath_26
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -136,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ShooterAttack_0
+      name: ChargerDeath_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 256
-        width: 256
-        height: 256
+        y: 800
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db83db5b77b323d70800000000000000
-      internalID: 9021338388912748733
+      spriteID: 0620fd33c8b3097e0800000000000000
+      internalID: -1760841980950150560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShooterAttack_1
+      name: ChargerDeath_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 256
-        height: 256
+        x: 400
+        y: 800
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5bf005e02c5f01120800000000000000
-      internalID: 2382674416691580853
+      spriteID: 6570d6b5de0b49fc0800000000000000
+      internalID: -3488969277817682090
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShooterAttack_2
+      name: ChargerDeath_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 256
-        width: 256
-        height: 256
+        x: 0
+        y: 400
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 205172984ebc00ff0800000000000000
-      internalID: -71833411623906046
+      spriteID: d6d02b2e5cc53ad00800000000000000
+      internalID: 982731148678532461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShooterAttack_3
+      name: ChargerDeath_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 256
-        width: 256
-        height: 256
+        x: 400
+        y: 400
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,42 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e669fe5cbd7d2bf0800000000000000
-      internalID: -347483348236933404
+      spriteID: 9af57aaa832e527e0800000000000000
+      internalID: -1790776543800762455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShooterAttack_4
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 256
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1f44c5d169c950660800000000000000
-      internalID: 7351454135303816433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShooterAttack_5
+      name: ChargerDeath_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 256
-        height: 256
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 507216195b1b296c0800000000000000
-      internalID: -4138049714213804283
+      spriteID: 52fa262af6f10c090800000000000000
+      internalID: -8016372772393275611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShooterAttack_6
+      name: ChargerDeath_5
       rect:
         serializedVersion: 2
-        x: 256
+        x: 400
         y: 0
-        width: 256
-        height: 256
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,74 +303,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4723ffe2601ec4570800000000000000
-      internalID: 8452378017342108276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShooterAttack_7
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3451d9a2c62bbe8a0800000000000000
-      internalID: -6274725478169504445
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShooterAttack_8
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f0fb4f96592d3f4b0800000000000000
-      internalID: -5407747188372226289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShooterAttack_9
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f2352b48249bc94a0800000000000000
-      internalID: -6585184859777248465
+      spriteID: 567d0e2390a5f8e00800000000000000
+      internalID: 1049156233755416421
       vertices: []
       indices: 
       edges: []
@@ -359,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 513c5bdf3e08efa46b0aedc5bd66ce4a
+    spriteID: e66edd8b21b586545901ce16ecf4e34a
     internalID: 0
     vertices: []
     indices: 
@@ -369,18 +323,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":2.0},"gridSpriteSize":{"x":256.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":3.0},"gridSpriteSize":{"x":400.0,"y":400.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      ShooterAttack_0: 9021338388912748733
-      ShooterAttack_1: 2382674416691580853
-      ShooterAttack_2: -71833411623906046
-      ShooterAttack_3: -347483348236933404
-      ShooterAttack_4: 7351454135303816433
-      ShooterAttack_5: -4138049714213804283
-      ShooterAttack_6: 8452378017342108276
-      ShooterAttack_7: -6274725478169504445
-      ShooterAttack_8: -5407747188372226289
-      ShooterAttack_9: -6585184859777248465
+      ChargerDeath_0: -1760841980950150560
+      ChargerDeath_1: -3488969277817682090
+      ChargerDeath_2: 982731148678532461
+      ChargerDeath_3: -1790776543800762455
+      ChargerDeath_4: -8016372772393275611
+      ChargerDeath_5: 1049156233755416421
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

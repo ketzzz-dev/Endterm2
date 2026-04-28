@@ -10,6 +10,6 @@ public class ChaseBehaviour : EnemyBehaviour
 
     public override void Execute(EnemyContext context)
     {
-        context.desiredDirection = context.directionToPlayer;
+        context.desiredDirection += context.directionToPlayer;
     }
 }
