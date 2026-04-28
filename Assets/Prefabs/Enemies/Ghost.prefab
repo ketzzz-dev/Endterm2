@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2824908010227473389}
   - component: {fileID: 8480513167015189827}
   m_Layer: 7
-  m_Name: Stunner
+  m_Name: Ghost
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

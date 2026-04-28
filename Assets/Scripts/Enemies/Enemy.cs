@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,7 +20,9 @@ public class Enemy : MonoBehaviour, IDamageable
     [Header("Behaviours")]
     [SerializeField] private List<EnemyBehaviour> behaviours;
 
-    private const float DamageCooldown = 1f;
+    public static event Action<Enemy> OnEnemyDied;
+
+    private const float DamageCooldown = 2f;
 
     public EnemyContext context { get; private set; } = new();
     public new Rigidbody2D rigidbody { get; private set; }
@@ -198,6 +201,8 @@ public class Enemy : MonoBehaviour, IDamageable
     
     private void OnDeathAnimationFinished()
     {
+        OnEnemyDied?.Invoke(this);
+
         Destroy(gameObject);
     }
 }

@@ -16,6 +16,8 @@ public class ShootAction : EnemyAction
             {
                 rb.linearVelocity = enemy.context.directionToPlayer * projectileSpeed;
             }
+
+            Destroy(projectile, 5f);
         }
     }
 }
