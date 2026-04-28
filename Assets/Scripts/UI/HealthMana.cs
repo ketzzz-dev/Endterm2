@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,8 +22,7 @@ public class HealthMana : MonoBehaviour
         manaMaskRelativeLeft = manaRect.rect.width - manaMask.padding.x;
         manaMaskRight = manaMask.padding.z;
 
-        if (PlayerReference.Instance != null)
-            playerStats = PlayerReference.Instance.GetComponent<PlayerStats>();
+        StartCoroutine(WaitForPLayer());
     }
 
     private void OnEnable()
@@ -37,8 +37,19 @@ public class HealthMana : MonoBehaviour
         PlayerStats.OnManaChanged -= UpdateManaBar;
     }
 
+    private IEnumerator WaitForPLayer()
+    {
+        while (PlayerReference.Instance == null)
+            yield return null;
+
+        playerStats = PlayerReference.Instance.GetComponent<PlayerStats>(); 
+    }
+
     private void UpdateHealthBar(float currentHealth)
     {
+        if (playerStats == null)
+            return;
+
         var healthPercent = currentHealth / playerStats.maxHealth;
         var padding = healthMask.padding;
 
@@ -48,6 +59,9 @@ public class HealthMana : MonoBehaviour
 
     private void UpdateManaBar(float currentMana)
     {
+        if (playerStats == null)
+            return;
+        
         var manaPercent = currentMana / playerStats.maxMana;
         var padding = manaMask.padding;
 

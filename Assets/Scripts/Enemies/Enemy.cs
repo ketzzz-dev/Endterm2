@@ -126,14 +126,14 @@ public class Enemy : MonoBehaviour, IDamageable
         var distance = toPlayer.magnitude;
 
         context.playerPosition = playerTransform.position;
-        context.directionToPlayer = toPlayer / distance;
+        context.directionToPlayer = distance > Mathf.Epsilon ? toPlayer / distance : Vector2.zero;
         context.distanceToPlayer = distance;
 
         // count down timers
         var keys = new List<string>(context.timers.Keys);
 
         foreach (var key in keys)
-            context.timers[key] -= Time.fixedDeltaTime * Random.value;
+            context.timers[key] -= Time.fixedDeltaTime;
 
 
         context.nearbyEnemies.Clear();

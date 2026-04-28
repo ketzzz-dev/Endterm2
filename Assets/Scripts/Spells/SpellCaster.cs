@@ -20,8 +20,10 @@ public class SpellCaster : MonoBehaviour
     {
         foreach (var spell in spells)
         {
-            if (spell != null && !string.IsNullOrEmpty(spell.symbolId))
-                spellMap[spell.symbolId.ToLowerInvariant()] = spell;
+            if (spell == null || string.IsNullOrWhiteSpace(spell.symbolId))
+                continue;
+
+            spellMap[NormalizeKey(spell.symbolId)] = spell;
         }
     }
 
@@ -37,29 +39,29 @@ public class SpellCaster : MonoBehaviour
 
     private void TryCast(string symbolId, Vector3 position)
     {
-        if (spellMap.TryGetValue(symbolId, out var spell))
-        {
-            if (!CanCast(spell))
-            {
-                Debug.Log($"Spell {spell.symbolId} is on cooldown.");
+        var key = NormalizeKey(symbolId);
 
-                return;
-            }
-
-            Debug.Log($"Casting spell: {symbolId} at {position}");
-
-            spell.Cast(new SpellCastContext
-            {
-                origin = transform.position,
-                target = position
-            });
-
-            ApplyCosts(spell);
-        }
-        else
+        if (!spellMap.TryGetValue(key, out var spell))
         {
             Debug.LogWarning($"No spell found for symbol: {symbolId}");
+            return;
         }
+
+        if (!CanCast(spell))
+        {
+            Debug.Log($"Spell {spell.symbolId} cannot be cast right now.");
+            return;
+        }
+
+        spell.Cast(new SpellCastContext
+        {
+            origin = transform.position,
+            target = position,
+            caster = gameObject,
+            casterStats = playerStats
+        });
+
+        ApplyCosts(spell);
     }
 
     private bool CanCast(SpellDefinition spell)
@@ -67,15 +69,14 @@ public class SpellCaster : MonoBehaviour
         if (spell == null)
             return false;
 
-        if (cooldowns.TryGetValue(spell.symbolId, out var cooldownEndTime))
-        {
-            if (Time.time < cooldownEndTime)
-                return false;
-        }
+        var key = NormalizeKey(spell.symbolId);
+
+        if (cooldowns.TryGetValue(key, out var cooldownEndTime) && Time.time < cooldownEndTime)
+            return false;
+
         if (playerStats.currentMana < spell.manaCost)
         {
             Debug.Log("Not enough mana to cast the spell.");
-
             return false;
         }
 
@@ -87,8 +88,13 @@ public class SpellCaster : MonoBehaviour
         if (spell == null)
             return;
 
-        cooldowns[spell.symbolId] = Time.time + spell.cooldown;
-        
+        var key = NormalizeKey(spell.symbolId);
+        cooldowns[key] = Time.time + spell.cooldown;
         playerStats.SpendMana(spell.manaCost);
+    }
+
+    private static string NormalizeKey(string value)
+    {
+        return string.IsNullOrWhiteSpace(value) ? string.Empty : value.Trim().ToLowerInvariant();
     }
 }

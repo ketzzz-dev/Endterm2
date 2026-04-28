@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GhostBallProjectile : MonoBehaviour
+public class EyeRingProjectile : MonoBehaviour
 {
     [SerializeField] private float damage = 20f;
 

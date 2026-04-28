@@ -10,7 +10,7 @@ public class ShootAction : EnemyAction
     {
         if (projectilePrefab != null && firePoint != null)
         {
-            var projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+            var projectile = Instantiate(projectilePrefab, firePoint.position, Quaternion.Euler(0f, 0f, Mathf.Atan2(enemy.context.directionToPlayer.y, enemy.context.directionToPlayer.x) * Mathf.Rad2Deg));
             
             if (projectile.TryGetComponent<Rigidbody2D>(out var rb))
             {

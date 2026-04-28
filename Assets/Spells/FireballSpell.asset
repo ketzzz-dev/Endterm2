@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c369a25853fc0943b243fbb27e4ece9, type: 3}
-  m_Name: LightBallSpell
+  m_Name: FireballSpell
   m_EditorClassIdentifier: Assembly-CSharp::SpellDefinition
-  symbolId: light ball
-  manaCost: 2
-  cooldown: 1
+  symbolId: fireball
+  manaCost: 25
+  cooldown: 10
   effects:
-  - {fileID: 11400000, guid: 7e486cee4a02b064bb94706483699a94, type: 2}
+  - {fileID: 11400000, guid: f8194f1bc025d364281d8bc440091920, type: 2}

@@ -12,7 +12,7 @@ public class ShootBehaviour : EnemyBehaviour
     {
         base.Initialize(enemy);
 
-        enemy.context.timers["ShootCooldown"] = 0f;
+        enemy.context.timers["ShootCooldown"] = cooldown * Random.value;
     }
 
     public override void Execute(EnemyContext context)

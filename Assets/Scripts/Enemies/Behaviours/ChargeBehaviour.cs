@@ -11,7 +11,7 @@ public class ChargeBehaviour : EnemyBehaviour
     {
         base.Initialize(enemy);
 
-        enemy.context.timers["ChargeCooldown"] = 0f;
+        enemy.context.timers["ChargeCooldown"] = cooldown * Random.value;
     }
     public override void Execute(EnemyContext context)
     {

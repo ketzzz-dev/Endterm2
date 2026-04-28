@@ -5,6 +5,8 @@ public struct SpellCastContext
 {
     public Vector3 origin;
     public Vector3 target;
+    public GameObject caster;
+    public PlayerStats casterStats;
 }
 
 public abstract class SpellEffect : ScriptableObject
@@ -16,16 +18,20 @@ public abstract class SpellEffect : ScriptableObject
 public class SpellDefinition : ScriptableObject
 {
     public string symbolId;
-
     public float manaCost;
     public float cooldown;
-
     public List<SpellEffect> effects;
 
     public void Cast(SpellCastContext context)
     {
+        if (effects == null)
+            return;
+
         foreach (var effect in effects)
         {
+            if (effect == null)
+                continue;
+
             effect.Cast(context);
         }
     }
