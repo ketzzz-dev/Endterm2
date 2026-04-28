@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LightBallSpell
   m_EditorClassIdentifier: Assembly-CSharp::SpellDefinition
   symbolId: light ball
-  manaCost: 0
+  manaCost: 2
   cooldown: 0.5
   effects:
   - {fileID: 11400000, guid: 7e486cee4a02b064bb94706483699a94, type: 2}

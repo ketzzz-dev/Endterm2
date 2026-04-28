@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17eb7507f54dbf74597a7d55bec6d5d3, type: 3}
   m_Name: ChargeBehaviour
   m_EditorClassIdentifier: Assembly-CSharp::ChargeBehaviour
-  cooldown: 7
+  cooldown: 6

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b798bb72055b1d943be14ff1a6e682c6, type: 3}
   m_Name: ShootBehaviour
   m_EditorClassIdentifier: Assembly-CSharp::ShootBehaviour
-  cooldown: 5
+  cooldown: 3
