@@ -169,4 +169,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb525a980f2da704bb08338bf34b2164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GhostBallProjectile
-  damage: 20
+  damage: 7

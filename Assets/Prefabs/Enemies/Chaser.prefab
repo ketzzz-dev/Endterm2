@@ -206,7 +206,7 @@ MonoBehaviour:
   maxHealth: 40
   moveSpeed: 6
   acceleration: 1.5
-  contactDamage: 15
+  contactDamage: 12
   contactKnockback: 5
   knockbackReduction: 0.25
   enemyDetectionRadius: 1.5

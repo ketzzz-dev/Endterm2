@@ -208,7 +208,7 @@ MonoBehaviour:
   moveSpeed: 2.5
   acceleration: 2
   contactDamage: 20
-  contactKnockback: 7
+  contactKnockback: 9
   knockbackReduction: 0.5
   enemyDetectionRadius: 1.5
   behaviours:

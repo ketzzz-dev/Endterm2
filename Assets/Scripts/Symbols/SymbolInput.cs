@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -16,7 +17,7 @@ public class SymbolInput : MonoBehaviour
     [Header("Symbols")]
     [SerializeField] private List<SymbolDefinition> symbolDefinitions;
 
-    public static event System.Action<string, Vector3> OnSymbolRecognized;
+    public static event Action<string, Vector3> OnSymbolRecognized;
 
     private const int MaxStrokes = 4;
 

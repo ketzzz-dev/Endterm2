@@ -40,7 +40,7 @@ public class Enemy : MonoBehaviour, IDamageable
     private void Start()
     {
         context.currentHealth = maxHealth;
-        playerTransform = PlayerReference.Instance;
+        playerTransform = PlayerReference.Instance.transform;
 
         foreach (var behaviour in behaviours)
             behaviour.Initialize(this);
